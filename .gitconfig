@@ -46,6 +46,7 @@
 	pruneall = "!git fetch origin --prune --tags; git remote prune origin"
 	bpush = "!git push --set-upstream origin $(git describe --contains --all HEAD)"
 	pullbase = pull --rebase
+	slog = log --pretty=oneline --abbrev-commit
 [push]
 	default = tracking
 [pull]
