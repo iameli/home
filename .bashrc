@@ -39,7 +39,7 @@ if [[ $EUID > 0 && "`type -t __git_ps1`" == 'function' ]]; then
     export PS1="${FG_BLUE}\u${FG_CYAN}@${FGBLUE}🍩${ANSI_RESET}  ${FG_GREEN}\w ${FG_WHITE}\$(__git_ps1 '(%s) ')${FG_WHITE}>${ANSI_RESET} "
 fi
 
-alias vssh="cd /Users/eli/code/WebApp && vagrant ssh -- -t \"cd /var/mb2; bash\""
+alias vssh="cd /Users/eli/code/ansible-repo && vagrant ssh -- -t \"cd /var/mb2; bash\""
 alias vmysql="cd /Users/eli/code/WebApp && vagrant ssh -- -t \"mysql -u root --password=activebuilding900\""
 alias app="cd /Users/eli/code/WebApp"
 alias ui="cd /Users/eli/code/WebUI"
