@@ -6,8 +6,8 @@
 		"Vintage"
 	],
 	"save_on_focus_lost": true,
+	"soda_classic_tabs": true,
 	"tab_size": 2,
-	"translate_tabs_to_spaces": true,
-  "theme": "Soda Dark.sublime-theme",
-  "soda_classic_tabs": true
+	"theme": "Soda Dark.sublime-theme",
+	"translate_tabs_to_spaces": true
 }

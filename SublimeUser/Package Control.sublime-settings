@@ -2,6 +2,10 @@
 	"installed_packages":
 	[
 		"Better CoffeeScript",
+		"Git",
+		"GitGutter",
+		"Sass",
+		"SCSS",
 		"Theme - Soda"
 	]
 }
