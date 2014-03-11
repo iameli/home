@@ -1,11 +1,15 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Pastels on Dark.tmTheme",
+	"create_window_at_startup": true,
 	"draw_centered": false,
+	"font_size": 12,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"open_files_in_new_window": true,
 	"save_on_focus_lost": true,
+	"scroll_past_end": true,
 	"soda_classic_tabs": true,
 	"tab_size": 2,
 	"theme": "Soda Dark.sublime-theme",

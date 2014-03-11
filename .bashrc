@@ -39,12 +39,15 @@ if [[ $EUID > 0 && "`type -t __git_ps1`" == 'function' ]]; then
     export PS1="${FG_BLUE}\u${FG_CYAN}@${FGBLUE}🍩${ANSI_RESET}  ${FG_GREEN}\w ${FG_WHITE}\$(__git_ps1 '(%s) ')${FG_WHITE}>${ANSI_RESET} "
 fi
 
-alias vssh="cd /Users/eli/code/ansible-repo && vagrant ssh -- -t \"cd /var/mb2; bash\""
-alias vmysql="cd /Users/eli/code/WebApp && vagrant ssh -- -t \"mysql -u root --password=activebuilding900\""
-alias app="cd /Users/eli/code/WebApp"
-alias ui="cd /Users/eli/code/WebUI"
+alias vssh="cd /Users/eli/code/portal-cm && vagrant ssh -- -t \"cd /var/mb2; bash\""
+alias vmysql="cd /Users/eli/code/portal-cm && vagrant ssh -- -t \"mysql -u root --password=activebuilding900 mb2\""
+alias app="cd /Users/eli/code/v2WebApp"
+alias m="cd /Users/eli/code/maynard"
 alias gwd="grunt watch --rewrite-urls false --environment development --source-maps true --cache-stamp eli"
 alias hc="git apply hardcode.patch && git update-index --assume-unchanged /Users/eli/code/WebApp/Library/MyBuilding/Version.php"
 alias hcn="git apply -R hardcode.patch && git update-index --no-assume-unchanged /Users/eli/code/WebApp/Library/MyBuilding/Version.php"
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
+
+# added by travis gem
+[ -f /Users/eli/.travis/travis.sh ] && source /Users/eli/.travis/travis.sh

@@ -6,6 +6,11 @@
 		"GitGutter",
 		"Sass",
 		"SCSS",
+		"GitGutter",
+		"Handlebars",
+		"JSONLint",
+		"SCSS",
+		"sublime-github",
 		"Theme - Soda"
 	]
 }
