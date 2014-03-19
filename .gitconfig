@@ -25,6 +25,7 @@
 [core]
 	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	excludesfile = /Users/eli/.gitignore_global
+	editor = sublime --wait -n
 [alias]
 	st = status
 	stat = status

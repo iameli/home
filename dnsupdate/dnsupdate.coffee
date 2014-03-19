@@ -22,6 +22,10 @@ ips = ips.reverse().sort (a, b) ->
     return 100
   if (b.indexOf "127") is 0
     return -100
+  if (a.indexOf "10") is 0
+    return -100
+  if (b.indexOf "10") is 0
+    return 100
   return 0
 
 ip = ips[0]

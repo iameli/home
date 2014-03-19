@@ -1,4 +1,5 @@
 #!/bin/bash
-coffee dnsupdate.coffee
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/dnsupdate.coffee"
+coffee $DIR
 sudo launchctl stop homebrew.mxcl.dnsmasq
 sudo launchctl start homebrew.mxcl.dnsmasq
