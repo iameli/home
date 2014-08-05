@@ -1,6 +1,6 @@
 PATH=$PATH:$HOME/bin
 
-MYNAME="⭐"
+MYNAME="'\xf0\x9f\x8d\x94'"
 
 if [ -f ~/.myname ]; then
     source ~/.myname
@@ -41,7 +41,7 @@ BG_WHITE="\[\033[47m\]"
 if [[ $EUID > 0 && "`type -t __git_ps1`" == 'function' ]]; then
     export GIT_PS1_SHOWDIRTYSTATE=true
     export GIT_PS1_SHOWUNTRACKEDFILES=true
-    export PS1="${FG_BLUE}\u${FG_CYAN}@${FGBLUE}${MYNAME}${ANSI_RESET}  ${FG_GREEN}\w ${FG_WHITE}\$(__git_ps1 '(%s) ')${FG_WHITE}>${ANSI_RESET} "
+    export PS1="${MYNAME}  ${FG_GREEN}\u ${FG_CYAN}\w ${FG_YELLOW}\$(__git_ps1 '%s ')${FG_MAGENTA}>${ANSI_RESET} "
 fi
 
 alias vssh="cd /Users/eli/code/portal-cm && vagrant ssh -- -t \"cd /var/mb2; bash\""
