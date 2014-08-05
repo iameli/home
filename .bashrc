@@ -49,10 +49,19 @@ alias vmysql="cd /Users/eli/code/portal-cm && vagrant ssh -- -t \"mysql -u root 
 alias app="cd /Users/eli/code/v2WebApp"
 alias m="cd /Users/eli/code/maynard"
 alias gwd="grunt delta --rewrite-urls false --environment development --source-maps true --cache-stamp eli"
+alias gsd="grunt serve --rewrite-urls false --environment development --source-maps true --cache-stamp eli"
+alias gdd="grunt delta --environment development --minify false --ngmin false"
 alias hc="git apply hardcode.patch && git update-index --assume-unchanged /Users/eli/code/WebApp/Library/MyBuilding/Version.php"
 alias hcn="git apply -R hardcode.patch && git update-index --no-assume-unchanged /Users/eli/code/WebApp/Library/MyBuilding/Version.php"
+alias http="python -m SimpleHTTPServer 8000"
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
 # added by travis gem
 [ -f /Users/eli/.travis/travis.sh ] && source /Users/eli/.travis/travis.sh
+export PHANTOMJS_BIN=/usr/local/bin/phantomjs
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
