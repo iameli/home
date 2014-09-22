@@ -44,7 +44,8 @@ if [[ $EUID > 0 && "`type -t __git_ps1`" == 'function' ]]; then
     export PS1="${MYNAME}  ${FG_GREEN}\u ${FG_CYAN}\w ${FG_YELLOW}\$(__git_ps1 '%s ')${FG_MAGENTA}>${ANSI_RESET} "
 fi
 
-alias vssh="cd /Users/eli/code/portal-cm && vagrant ssh -- -t \"cd /var/mb2; bash\""
+alias vssh="cd /Users/eli/code/portal-cm && vagrant ssh -- -t \"cd /opt/rp/v2WebApp; bash\""
+alias vportal="cd /Users/eli/code/portal-cm && vagrant ssh -- -t \"cd /opt/rp/portal-cm; bash\""
 alias vmysql="cd /Users/eli/code/portal-cm && vagrant ssh -- -t \"mysql -u root --password=activebuilding900 mb2\""
 alias app="cd /Users/eli/code/v2WebApp"
 alias m="cd /Users/eli/code/maynard"
@@ -54,6 +55,7 @@ alias gdd="grunt delta --environment development --minify false --ngmin false"
 alias hc="git apply hardcode.patch && git update-index --assume-unchanged /Users/eli/code/WebApp/Library/MyBuilding/Version.php"
 alias hcn="git apply -R hardcode.patch && git update-index --no-assume-unchanged /Users/eli/code/WebApp/Library/MyBuilding/Version.php"
 alias http="python -m SimpleHTTPServer 8000"
+alias git=hub
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
@@ -65,3 +67,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+ulimit -n 1024
+ulimit -u 1024

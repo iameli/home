@@ -2,16 +2,18 @@
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"create_window_at_startup": true,
 	"draw_centered": false,
+	"ensure_newline_at_eof_on_save": true,
 	"font_size": 12,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"Git"
 	],
 	"open_files_in_new_window": true,
 	"save_on_focus_lost": true,
 	"scroll_past_end": true,
 	"soda_classic_tabs": true,
 	"tab_size": 2,
-	"theme": "Soda Dark.sublime-theme",
+	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true
 }

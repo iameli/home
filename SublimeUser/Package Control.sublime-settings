@@ -1,19 +1,24 @@
 {
 	"installed_packages":
 	[
+		"Alignment",
 		"Better CoffeeScript",
+		"Expand Selection to Whitespace",
 		"Git",
 		"GitCommitMsg",
 		"GitGutter",
 		"Handlebars",
+		"INI",
 		"JavaScript Refactor",
 		"JSONLint",
+		"Open URL",
 		"Origami",
 		"Pretty YAML",
 		"RAML.Syntax.Highlighter",
 		"Sass",
 		"SCSS",
 		"sublime-github",
-		"Theme - Soda"
+		"Theme - Soda",
+		"Todo"
 	]
 }
