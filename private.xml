@@ -2,7 +2,7 @@
 <root>
 <item>
     <name>Remap Caps Lock to Hyper</name>
-    <appendix>OS X doesn't have a Hyper. This maps Left Control to Control + Shift + Option + Command.</appendix>
+    <appendix>OS X doesn't have a Hyper. This maps F19 to Control + Shift + Option + Command.</appendix>
 
     <identifier>caps_lock_to_hyper</identifier>
 
