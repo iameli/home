@@ -1,5 +1,5 @@
 PATH=$PATH:$HOME/bin
-
+PATH=$PATH:$HOME/pear/bin
 MYNAME="'\xf0\x9f\x8d\x94'"
 
 if [ -f ~/.myname ]; then

@@ -2,12 +2,11 @@
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"create_window_at_startup": true,
 	"draw_centered": false,
-	"ensure_newline_at_eof_on_save": true,
 	"font_size": 12,
 	"ignored_packages":
 	[
-		"Git",
-		"Vintage"
+		"Vintage",
+		"Git"
 	],
 	"open_files_in_new_window": true,
 	"save_on_focus_lost": true,
