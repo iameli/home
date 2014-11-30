@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "git remote add dokku dokku@burfer.iame.li:subdomain"

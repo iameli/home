@@ -1,0 +1,4 @@
+NAME=/tmp/`uuidgen`
+sass-convert --from scss --to scss --indent 4 --unix-newlines $1 > $NAME
+rm $1
+mv $NAME $1
