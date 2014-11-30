@@ -1,0 +1,1 @@
+sudo -- screen -dm su $1 -c "/Applications/Skype.app/Contents/MacOS/Skype"
