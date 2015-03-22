@@ -2,10 +2,17 @@
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"create_window_at_startup": true,
 	"draw_centered": false,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"node_modules"
+	],
 	"font_size": 12,
 	"ignored_packages":
 	[
-		"Git",
 		"Vintage"
 	],
 	"open_files_in_new_window": true,

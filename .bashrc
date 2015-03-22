@@ -44,11 +44,8 @@ if [[ $EUID > 0 && "`type -t __git_ps1`" == 'function' ]]; then
     export PS1="${MYNAME}  ${FG_GREEN}\u ${FG_CYAN}\w ${FG_YELLOW}\$(__git_ps1 '%s ')${FG_MAGENTA}>${ANSI_RESET} "
 fi
 
-alias vssh="cd /Users/eli/code/portal-cm && vagrant ssh -- -t \"cd /opt/rp/v2WebApp; bash\""
-alias vportal="cd /Users/eli/code/portal-cm && vagrant ssh -- -t \"cd /opt/rp/portal-cm; bash\""
-alias vmysql="cd /Users/eli/code/portal-cm && vagrant ssh -- -t \"mysql -u root --password=activebuilding900 mb2\""
-alias app="cd /Users/eli/code/v2WebApp"
-alias m="cd /Users/eli/code/maynard"
+alias apps="cd /Users/eli/code/apps"
+alias c="cd /Users/eli/code"
 alias gwd="grunt delta --rewrite-urls false --environment development --source-maps true --cache-stamp eli"
 alias gsd="grunt serve --rewrite-urls false --environment development --source-maps true --cache-stamp eli"
 alias gdd="grunt delta --environment development --minify false --use-cdn false --rewrite-urls false"

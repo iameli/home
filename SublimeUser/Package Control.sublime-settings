@@ -1,8 +1,13 @@
 {
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"Alignment",
 		"Better CoffeeScript",
+		"BlameHighlighter",
+		"Emmet",
 		"Expand Selection to Whitespace",
 		"Git",
 		"GitCommitMsg",
@@ -16,14 +21,15 @@
 		"LESS",
 		"Open URL",
 		"Origami",
+		"Package Control",
 		"Phpcs",
 		"PhpDoc",
 		"Pretty YAML",
-		"RAML.Syntax.Highlighter",
 		"Sass",
 		"SCSS",
 		"sublime-github",
 		"Theme - Soda",
-		"Todo"
+		"Todo",
+		"TrailingSpaces"
 	]
 }
