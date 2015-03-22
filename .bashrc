@@ -54,6 +54,7 @@ alias hcn="git apply -R hardcode.patch && git update-index --no-assume-unchanged
 alias vlog="cd /Users/eli/code/portal-cm && vagrant ssh -- -t \"sudo tail -f -n 0 /var/log/php-fpm/www-error.log\""
 alias http="python -m SimpleHTTPServer 8000"
 alias git=hub
+alias g=hub
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
