@@ -45,6 +45,7 @@ if [[ $EUID > 0 && "`type -t __git_ps1`" == 'function' ]]; then
 fi
 
 alias apps="cd /Users/eli/code/apps"
+alias tt="cd /Users/eli/code/apps/tealtown/packages/csats:tealtown"
 alias c="cd /Users/eli/code"
 alias gwd="grunt delta --rewrite-urls false --environment development --source-maps true --cache-stamp eli"
 alias gsd="grunt serve --rewrite-urls false --environment development --source-maps true --cache-stamp eli"
