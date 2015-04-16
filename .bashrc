@@ -47,12 +47,6 @@ fi
 alias apps="cd /Users/eli/code/apps"
 alias tt="cd /Users/eli/code/apps/tealtown/packages/csats:tealtown"
 alias c="cd /Users/eli/code"
-alias gwd="grunt delta --rewrite-urls false --environment development --source-maps true --cache-stamp eli"
-alias gsd="grunt serve --rewrite-urls false --environment development --source-maps true --cache-stamp eli"
-alias gdd="grunt delta --environment development --minify false --use-cdn false --rewrite-urls false"
-alias hc="git apply hardcode.patch && git update-index --assume-unchanged /Users/eli/code/WebApp/Library/MyBuilding/Version.php"
-alias hcn="git apply -R hardcode.patch && git update-index --no-assume-unchanged /Users/eli/code/WebApp/Library/MyBuilding/Version.php"
-alias vlog="cd /Users/eli/code/portal-cm && vagrant ssh -- -t \"sudo tail -f -n 0 /var/log/php-fpm/www-error.log\""
 alias http="python -m SimpleHTTPServer 8000"
 alias git=hub
 alias g=hub
