@@ -14,4 +14,30 @@
         ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L
     </autogen>
 </item>
+<item>
+    <name>Remap Page Up to F17</name>
+    <appendix>Page Up sucks, custom function keys rule</appendix>
+
+    <identifier>page_up_to_f17</identifier>
+
+    <autogen>
+        --KeyToKey--
+        KeyCode::PAGEUP,
+
+        KeyCode::F17
+    </autogen>
+</item>
+<item>
+    <name>Remap Page Down to F18</name>
+    <appendix>Page Down sucks, custom function keys rule</appendix>
+
+    <identifier>page_down_to_F18</identifier>
+
+    <autogen>
+        --KeyToKey--
+        KeyCode::PAGEDOWN,
+
+        KeyCode::F18
+    </autogen>
+</item>
 </root>
