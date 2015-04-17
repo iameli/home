@@ -3,6 +3,7 @@
 # Colors are great
 set fish_color_user green
 set fish_color_cwd cyan
+set fish_color_command magenta
 
 # So is git
 set __fish_git_prompt_showuntrackedfiles 1
