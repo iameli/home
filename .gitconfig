@@ -32,7 +32,7 @@
 	ci = commit
 	br = branch
 	branchlog = "!git log $(git rev-parse --not --branches | grep -v $(git rev-parse $1)) $1"
-        f = fetch
+  f = fetch
 	co = checkout
 	df = diff
         dc = diff --cached
@@ -50,6 +50,7 @@
 	pb = pull --rebase
 	issue = "!git checkout $(git describe --contains --all $1)"
 	slog = log --pretty=oneline --abbrev-commit
+	reup = "!git add -u $(git diff --name-only --cached --diff-filter=ACMR)"
 [push]
 	default = tracking
 [pull]

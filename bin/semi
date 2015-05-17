@@ -1,0 +1,3 @@
+#!/bin/bash
+# Requires closure linter: https://developers.google.com/closure/utilities/docs/linter_howto
+git diff --cached --name-only --diff-filter=ACMR | grep "js\$" | xargs fixjsstyle --fix_error_codes MISSING_SEMICOLON

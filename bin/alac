@@ -1,0 +1,1 @@
+ffmpeg -i "$1" -c:a alac "$1.m4a"
