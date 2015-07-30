@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+var fs = require('fs');
+var thing = fs.readFileSync(process.argv[2], 'utf8');
+var parsed = JSON.parse(thing);
+
+// Change between me
+if (parsed.stripe) {
+  parsed.stripe = {
+    secretKey: 'sk_live_05hjvaWgaPVrpsaSbuh6TldW'
+  }
+
+  parsed.public.stripe = {
+    publishableKey: 'pk_live_BcGeKVqBBfogmVpQuDIchfpN'
+  }
+}
+
+
+// End
+
+var stringified = JSON.stringify(parsed, null, 2);
+stringified += "\n";
+fs.writeFileSync(process.argv[2], stringified, 'utf8');

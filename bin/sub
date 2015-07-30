@@ -1,1 +1,3 @@
-/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl
+#!/bin/bash
+subl -b "$@"
+osascript -e "tell application \"Sublime Text\"" -e "activate" -e "end tell"

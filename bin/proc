@@ -1,0 +1,2 @@
+#!/bin/bash
+ps -A | grep $1 | grep meteor | awk '{ print $1 }'

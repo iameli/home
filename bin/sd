@@ -1,1 +1,2 @@
+#!/bin/bash
 screen -x dev || screen -SU dev

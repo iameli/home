@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA['use strict';
+
+CSATS.schema.${1:model} = new CSATS.schema({
+
+});
+
+CSATS.${2:Model} = class ${2:Model} extends CSATS.NewModel {
+
+};
+
+CSATS.${1:model} = new CSATS.ChartData(CSATS.collections.${3:Models}, CSATS.schema.${1:model});
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

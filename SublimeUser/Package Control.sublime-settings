@@ -5,6 +5,7 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"AppleScript Extensions",
 		"Babel",
 		"Better CoffeeScript",
 		"BlameHighlighter",
