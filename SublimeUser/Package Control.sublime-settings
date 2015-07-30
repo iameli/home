@@ -5,6 +5,7 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"Babel",
 		"Better CoffeeScript",
 		"BlameHighlighter",
 		"BracketHighlighter",
@@ -27,6 +28,7 @@
 		"JSX",
 		"LESS",
 		"Meteor Snippets",
+		"nginx",
 		"Open URL",
 		"Origami",
 		"Package Control",

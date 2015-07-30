@@ -1,0 +1,2 @@
+#!/bin/bash
+ffmpeg -i "$1" -map 0:2 -c:s copy "$1.ass" && ffmpeg -fflags +genpts -i "$1" -map 0:0 -map 0:1 -c:v libx264 -crf 28 -profile:v baseline -level 3.0 -pix_fmt yuv420p -vf ass="'$1.ass'" -c:a libfaac "$1.mp4"
