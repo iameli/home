@@ -30,4 +30,3 @@ alias c "cd /Users/eli/code"
 alias http "python -m SimpleHTTPServer 8000"
 alias git hub
 alias g hub
-alias gg "git grep -i"
