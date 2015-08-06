@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
 {
-  git grep --color=always "$*";
-  git ls-files | GREP_COLOR="1;36" grep --color=always "$*";
+  git grep -i --color=always "$*";
+  git ls-files | GREP_COLOR="1;36" grep -i --color=always "$*";
 } | less -FXr
