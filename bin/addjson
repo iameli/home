@@ -4,14 +4,9 @@ var thing = fs.readFileSync(process.argv[2], 'utf8');
 var parsed = JSON.parse(thing);
 
 // Change between me
-if (parsed.stripe) {
-  parsed.stripe = {
-    secretKey: 'sk_live_05hjvaWgaPVrpsaSbuh6TldW'
-  }
-
-  parsed.public.stripe = {
-    publishableKey: 'pk_live_BcGeKVqBBfogmVpQuDIchfpN'
-  }
+parsed.relateiq = {
+  "apikey": "55d39fe8e4b011500912a578",
+  "apisecret": "Uodtnrd95bKKIcSfMUwrvK6SybI"
 }
 
 

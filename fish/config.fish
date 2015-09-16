@@ -18,7 +18,6 @@ set PATH $PATH $HOME/bin
 set PATH $PATH $HOME/pear/bin
 set PATH $PATH /usr/local/bin
 set PATH $PATH /usr/local/sbin
-set PATH $PATH /usr/local/sbin
 set PATH $PATH $HOME/google-cloud-sdk/bin
 
 set DOCKER_HOST "tcp://192.168.59.103:2376"
