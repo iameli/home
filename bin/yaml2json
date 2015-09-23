@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var yaml = require('js-yaml');
+
+var content = '';
+process.stdin.resume();
+process.stdin.on('data', function(buf) { content += buf.toString(); });
+process.stdin.on('end', function() {
+  var obj = yaml.safeLoad(content);
+  console.log(JSON.stringify(obj, null, 2));
+});

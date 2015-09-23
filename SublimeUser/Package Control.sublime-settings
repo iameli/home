@@ -1,4 +1,5 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -36,6 +37,7 @@
 		"Phpcs",
 		"PhpDoc",
 		"Pretty YAML",
+		"SaltStack-related syntax highlighting and snippets",
 		"Sass",
 		"SCSS",
 		"SFTP",
