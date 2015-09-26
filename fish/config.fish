@@ -26,7 +26,5 @@ alias ops "cd /Users/eli/code/ops"
 alias tt "cd /Users/eli/code/apps/tealtown/packages/csats:tealtown"
 alias c "cd /Users/eli/code"
 alias http "python -m SimpleHTTPServer 8000"
-alias git hub
-alias g hub
 alias kube kubectl
 alias kubename "kubectl config use-context"
