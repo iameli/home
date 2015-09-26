@@ -20,9 +20,6 @@ set PATH $PATH /usr/local/bin
 set PATH $PATH /usr/local/sbin
 set PATH $PATH $HOME/google-cloud-sdk/bin
 
-set DOCKER_CERT_PATH "/Users/eli/.boot2docker/certs/boot2docker-vm"
-set DOCKER_TLS_VERIFY "1"
-
 # Aliases are pretty cool
 alias apps "cd /Users/eli/code/apps"
 alias ops "cd /Users/eli/code/ops"
