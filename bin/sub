@@ -1,3 +1,10 @@
 #!/bin/bash
-subl -b "$@"
-osascript -e "tell application \"Sublime Text\"" -e "activate" -e "end tell"
+LOCAL_DIR="\/Users\/eli\/rcode"
+REMOTE_DIR="\/root\/code"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  subl -b "$@"
+  osascript -e "tell application \"Sublime Text\"" -e "activate" -e "end tell"
+else
+  ABSPATH=`realpath $1 | sed s/$REMOTE_DIR/$LOCAL_DIR/g`
+  ssh -p 2173 eli@localhost sub `echo $ABSPATH | sed s/$REMOTE_DIR/$LOCAL_DIR/g`
+fi

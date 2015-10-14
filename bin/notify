@@ -1,0 +1,2 @@
+#!/bin/bash
+osascript -e "display notification \"$*\" with title \"$0\" sound name \"Submarine\""

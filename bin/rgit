@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo $* > ~/rgit.output
+LOCAL_DIR="\/Users\/eli\/rcode"
+REMOTE_DIR="\/root\/code"
+if echo $* | grep $LOCAL_DIR > /dev/null; then
+  PARAMS=`echo $* | sed s/$LOCAL_DIR/$REMOTE_DIR/g`
+  ssh drumstick git $PARAMS
+else
+  exec git $*
+fi
