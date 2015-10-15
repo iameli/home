@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo $* > ~/rgit.output
+echo $* >> ~/rgit.output
 LOCAL_DIR="\/Users\/eli\/rcode"
 REMOTE_DIR="\/root\/code"
 if echo $* | grep $LOCAL_DIR > /dev/null; then
