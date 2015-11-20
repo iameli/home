@@ -46,6 +46,7 @@
 		"StringEncode",
 		"Stylus",
 		"sublime-github",
+		"SublimeLinter-shellcheck",
 		"Tag",
 		"Terminal",
 		"Theme - Soda",
