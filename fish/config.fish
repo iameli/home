@@ -21,10 +21,10 @@ set PATH $PATH /usr/local/sbin
 set PATH $PATH $HOME/google-cloud-sdk/bin
 
 # Aliases are pretty cool
-alias apps "cd /Users/eli/code/apps"
-alias ops "cd /Users/eli/code/ops"
-alias tt "cd /Users/eli/code/apps/tealtown/packages/csats:tealtown"
-alias c "cd /Users/eli/code"
+alias apps "cd ~/code/apps"
+alias ops "cd ~/code/ops"
+alias tt "cd ~/code/apps/tealtown/packages/csats:tealtown"
+alias c "cd ~/code"
 alias http "python -m SimpleHTTPServer 8000"
 alias kube kubectl
 alias kubename "kubectl config use-context"

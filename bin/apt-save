@@ -1,0 +1,7 @@
+#!/bin/bash
+OUTPUT_FILE="/root/code/drumstick/packages.txt"
+for package in $*; do
+  apt-get install -y $package && \
+  echo $package >> $OUTPUT_FILE && \
+  echo "Saved $package"
+done

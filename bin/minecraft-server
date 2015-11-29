@@ -1,2 +1,2 @@
 #!/bin/bash
- docker run -d -e EULA=TRUE -p 25565:25565 --name mc -v /mnt/user/minecraft:/data itzg/minecraft-server /start-minecraft
+ docker run -it -d -e EULA=TRUE -p 25565:25565 --name mc -v /mnt/user/minecraft:/data itzg/minecraft-server /start-minecraft
