@@ -1,6 +1,6 @@
 #!/bin/bash
 LOCAL_DIR="\/Users\/eli\/rcode"
-REMOTE_DIR="\/root\/code"
+REMOTE_DIR="\/home\/root\/code"
 if [[ "$OSTYPE" == "darwin"* ]]; then
   subl -b "$@"
   osascript -e "tell application \"Sublime Text\"" -e "activate" -e "end tell"
