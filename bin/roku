@@ -1,0 +1,2 @@
+#!/bin/bash
+ffmpeg -i "$1" -c:v copy -c:a libmp3lame "$1.roku.mp4"
