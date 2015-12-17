@@ -19,6 +19,7 @@ set PATH $PATH $HOME/pear/bin
 set PATH $PATH /usr/local/bin
 set PATH $PATH /usr/local/sbin
 set PATH $PATH $HOME/google-cloud-sdk/bin
+set PATH $PATH /opt/google-cloud-sdk/bin
 
 # Aliases are pretty cool
 alias apps "cd ~/code/apps"

@@ -1,1 +1,2 @@
-/Users/eli/code/ops/run/kubectl
+#!/bin/bash
+exec ~/code/ops/run/kubectl $*
