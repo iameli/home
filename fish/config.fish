@@ -20,6 +20,8 @@ set PATH $PATH /usr/local/bin
 set PATH $PATH /usr/local/sbin
 set PATH $PATH $HOME/google-cloud-sdk/bin
 set PATH $PATH /opt/google-cloud-sdk/bin
+set PATH $PATH $HOME/gopath/bin
+set PATH $PATH $HOME/code/pratty-ops/bin
 
 # Aliases are pretty cool
 alias apps "cd ~/code/apps"
@@ -29,6 +31,7 @@ alias c "cd ~/code"
 alias http "python -m SimpleHTTPServer 8000"
 alias kube kubectl
 alias kubename "kubectl config use-context"
+alias k "~/code/pratty-ops/run/kubectl"
 
 # grc colourify stuff
 alias colourify "grc -es --colour=auto"

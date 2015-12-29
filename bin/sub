@@ -6,5 +6,6 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   osascript -e "tell application \"Sublime Text\"" -e "activate" -e "end tell"
 else
   ABSPATH=`realpath $1 | sed s/$REMOTE_DIR/$LOCAL_DIR/g`
-  ssh -p 2173 eli@localhost sub `echo $ABSPATH | sed s/$REMOTE_DIR/$LOCAL_DIR/g`
+  words=$(ssh loopback sub `echo $ABSPATH | sed s/$REMOTE_DIR/$LOCAL_DIR/g` 2>&1)
+  echo $words
 fi
