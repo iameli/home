@@ -2,11 +2,11 @@
 
 LOCAL_DIR="\/Users\/eli\/rcode"
 REMOTE_DIR="\/home\/root\/code"
-echo $* >> ~/rgit.output
+# echo $* >> ~/rgit.output
 if echo $* | grep $LOCAL_DIR > /dev/null; then
   PARAMS=`echo $* | sed s/$LOCAL_DIR/$REMOTE_DIR/g`
   ssh drumstick git $PARAMS
-  echo "$PARAMS"
+  # echo "$PARAMS" >> ~/rgit.output
 else
   exec git $*
 fi
