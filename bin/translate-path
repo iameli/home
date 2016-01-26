@@ -1,0 +1,23 @@
+#!/bin/bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+myPath=$(realpath $1)
+
+function sedSafe() {
+  echo "$1" | sed -e 's/\//\\\//g' -e 's/\&/\\\&/g'
+}
+
+(
+  cd "$HOME/code"
+  links=$(find . -maxdepth 1 -type l)
+  for l in $links; do
+    rewriteFrom="$(realpath $(readlink "$l"))"
+    rewriteTo="$(realpath -s "$l") | sedSafe"
+    # echo "rewrite $rewriteFrom to $rewriteTo"
+    myPath=$(echo "$myPath" | sed "s/$(sedSafe $rewriteFrom)/$(sedSafe $rewriteTo)/g")
+  done
+  echo "$myPath"
+)

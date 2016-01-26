@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+output="$(kubectl create -o name $*)
+echo "got $output"
+kubectl attach

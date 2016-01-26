@@ -1,2 +1,2 @@
 #!/bin/bash
-aws ec2 describe-instances --output json | jq '.Reservations[].Instances[] | {"PublicDnsName": .PublicDnsName, "PrivateDnsName": .PrivateDnsName, "InstanceId": .InstanceId}'
+aws ec2 describe-instances | jq '[.Reservations[].Instances[] | {"PublicDnsName": .PublicDnsName, "PrivateDnsName": .PrivateDnsName, "InstanceId": .InstanceId}]'
