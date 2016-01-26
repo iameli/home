@@ -10,6 +10,7 @@
 		"CVS",
 		"node_modules"
 	],
+	"follow_symlinks": true,
 	"font_size": 12,
 	"ignored_packages":
 	[
@@ -22,6 +23,5 @@
 	"soda_classic_tabs": true,
 	"tab_size": 2,
 	"theme": "Soda Dark 3.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	"follow_symlinks": true
+	"translate_tabs_to_spaces": true
 }
