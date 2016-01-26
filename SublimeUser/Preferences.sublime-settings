@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"create_window_at_startup": true,
 	"draw_centered": false,
 	"folder_exclude_patterns":
@@ -22,5 +22,6 @@
 	"soda_classic_tabs": true,
 	"tab_size": 2,
 	"theme": "Soda Dark 3.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+	"follow_symlinks": true
 }
