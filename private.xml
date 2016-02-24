@@ -40,4 +40,17 @@
         KeyCode::F18
     </autogen>
 </item>
+<item>
+    <name>Remap Button4 to F12</name>
+    <appendix>For some reason this laptop wont let me do it otherwise</appendix>
+
+    <identifier>button4_to_F12</identifier>
+
+    <autogen>
+        --KeyToKey--
+        PointingButton::BUTTON4,
+
+        KeyCode::F12
+    </autogen>
+</item>
 </root>
