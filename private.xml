@@ -41,16 +41,16 @@
     </autogen>
 </item>
 <item>
-    <name>Remap Button4 to F12</name>
-    <appendix>For some reason this laptop wont let me do it otherwise</appendix>
+    <name>Button 5 to F16</name>
+    <appendix>Sometimes it being a mouse button is problems</appendix>
 
-    <identifier>button4_to_F12</identifier>
+    <identifier>button_5_to_F15</identifier>
 
     <autogen>
         --KeyToKey--
-        PointingButton::BUTTON4,
+        PointingButton::BUTTON5,
 
-        KeyCode::F12
+        KeyCode::F15
     </autogen>
 </item>
 </root>
