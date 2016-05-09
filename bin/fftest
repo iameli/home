@@ -1,0 +1,2 @@
+#!/bin/bash
+yes | ffmpeg -i "$1" -c:v libx264 -preset ultrafast -c:a libmp3lame -f mp4 -loglevel verbose /dev/null
