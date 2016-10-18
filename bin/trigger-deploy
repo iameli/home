@@ -1,0 +1,4 @@
+#!/bin/bash
+
+patch="{\"spec\": {\"template\": {\"metadata\": {\"labels\": {\"deployTime\": \"$(date +%s)\"}}}}}"
+kubectl patch deployment "$1" -p "$patch"
