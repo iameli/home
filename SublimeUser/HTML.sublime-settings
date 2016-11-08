@@ -1,6 +1,7 @@
 {
 	"extensions":
 	[
-		"item"
+		"item",
+		"html"
 	]
 }

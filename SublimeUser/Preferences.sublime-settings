@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"create_window_at_startup": true,
 	"draw_centered": false,
 	"folder_exclude_patterns":
@@ -11,10 +11,12 @@
 		"node_modules"
 	],
 	"follow_symlinks": true,
-	"font_size": 12,
+	"font_face": "Operator Mono Book",
+	"font_size": 15,
 	"ignored_packages":
 	[
 		"Markdown",
+		"Tag",
 		"Vintage"
 	],
 	"open_files_in_new_window": true,
@@ -24,5 +26,7 @@
 	"tab_size": 2,
 	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true,
+	"wrap_width": 100
 }
