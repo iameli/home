@@ -1,6 +1,6 @@
 {
-	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"auto_complete_commit_on_tab": true,
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"create_window_at_startup": true,
 	"draw_centered": false,
 	"fold_buttons": false,
@@ -17,6 +17,8 @@
 	"font_size": 15,
 	"ignored_packages":
 	[
+		"Alignment",
+		"Better CoffeeScript",
 		"Markdown",
 		"Tag",
 		"Vintage"
