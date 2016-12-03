@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+exec http-server -a 0.0.0.0 -p 8443 -S -C /home/root/letsencrypt/archive/drumstick.iame.li/fullchain1.pem -K /home/root/letsencrypt/keys/0000_key-certbot.pem

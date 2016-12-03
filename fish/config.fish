@@ -33,9 +33,14 @@ set PATH $PATH $HOME/go/bin
 set PATH $PATH $HOME/code/pratty-ops/bin
 set PATH $PATH /Volumes/elidev/csats/ops/run
 set PATH $PATH /Users/eli/.nvm/versions/node/v4.5.0/bin
+set PATH $PATH $HOME/code/gopath/bin
+set PATH $PATH $HOME/code/sk-ops/bin
+set PATH $PATH $HOME/code/sk-internal/apps/sk-ffmpeg/bin
+set -x NODE_PATH '/home/root/code/streamkitchen/apps:/home/root/code/sk-internal/apps'
 if [ (uname) = "Linux" ]
   set PATH $PATH $HOME/code/home/bin_linux
 end
+set PATH $PATH $HOME/bin_local
 
 # Aliases are pretty cool
 alias apps "cd ~/code/apps"
@@ -53,6 +58,13 @@ alias csats "cd /Volumes/elidev/csats"
 alias cops "cd /Volumes/elidev/csats/ops"
 alias capps "cd /Volumes/elidev/csats/apps"
 alias ckeys "cd /Volumes/elidev/csats/keys"
+alias ska "cd ~/code/streamkitchen"
+alias ski "cd ~/code/sk-internal"
+alias sko "cd ~/code/sk-ops"
+alias l "ls -alhs"
+alias dffmpeg "docker run -it -v /home/root:/home/root -w (pwd) --net=host gcr.io/stream-kitchen/sk-ffmpeg ffmpeg"
+alias sk "node ~/code/pratty-apps/apps/sk-cli/dist/app.js"
+alias bfg "java -jar ~/code/home/bin/bfg.jar"
 
 # grc colourify stuff
 alias colourify "grc -es --colour=auto"
