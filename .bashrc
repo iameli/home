@@ -64,3 +64,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 ulimit -n 1024
 ulimit -u 1024
+
+export NVM_DIR="/Users/eli/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

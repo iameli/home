@@ -1,7 +1,9 @@
 {
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"auto_complete_commit_on_tab": true,
 	"create_window_at_startup": true,
 	"draw_centered": false,
+	"fold_buttons": false,
 	"folder_exclude_patterns":
 	[
 		".svn",
@@ -19,6 +21,10 @@
 		"Tag",
 		"Vintage"
 	],
+	"line_numbers": false,
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"margin": 4,
 	"open_files_in_new_window": true,
 	"save_on_focus_lost": true,
 	"scroll_past_end": true,

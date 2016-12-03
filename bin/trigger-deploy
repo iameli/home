@@ -1,4 +1,5 @@
 #!/bin/bash
 
-patch="{\"spec\": {\"template\": {\"metadata\": {\"labels\": {\"deployTime\": \"$(date +%s)\"}}}}}"
+patch='{"spec":{"template":{"metadata":{"labels":{"deployTime":"'$(date +%s)'"}}}}}'
+echo "$patch"
 kubectl patch deployment "$1" -p "$patch"
