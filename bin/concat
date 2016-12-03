@@ -1,0 +1,15 @@
+#!/bin/bash
+
+video="$1"
+audio="$2"
+output="$3"
+
+videoTemp="$(mktemp).ts"
+audioTemp="$(mktemp).ts"
+curl -o "$videoTemp" "$video"
+curl -o "$audioTemp" "$audio"
+
+ffmpeg -i "$videoTemp" -i "$audioTemp" -bsf:a aac_adtstoasc -vsync passthrough -copyts -c:v copy -c:a copy "$3"
+
+rm "$videoTemp"
+rm "$audioTemp"

@@ -1,5 +1,5 @@
 #!/bin/bash
-LOCAL_DIR="\/Users\/eli\/rcode"
+LOCAL_DIR="\/Users\/eli\/sshcode"
 REMOTE_DIR="\/home\/root\/code"
 myPath="$1"
 if [[ "$OSTYPE" == "darwin"* ]]; then

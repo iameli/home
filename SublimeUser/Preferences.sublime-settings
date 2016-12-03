@@ -1,5 +1,19 @@
 {
 	"auto_complete_commit_on_tab": true,
+	"added_words":
+	[
+		"Javascript",
+		"onclick",
+		"javascript",
+		"num",
+		"app",
+		"Angular's",
+		"frontend",
+		"clearfix",
+		"html",
+		"ng"
+	],
+	"atomic_save": false,
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"create_window_at_startup": true,
 	"draw_centered": false,
@@ -14,7 +28,7 @@
 	],
 	"follow_symlinks": true,
 	"font_face": "Operator Mono Book",
-	"font_size": 15,
+	"font_size": 16,
 	"ignored_packages":
 	[
 		"Alignment",
@@ -34,7 +48,7 @@
 	"tab_size": 2,
 	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
+	"trim_trailing_white_space_on_save": false,
 	"word_wrap": true,
 	"wrap_width": 100
 }

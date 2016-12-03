@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+video="$1"
+
+filter="-filter_complex scale=600:-1"
+
+bitrate="2M"
+
+ffmpeg -i "$video" -y -c:v libx264 -preset veryslow -b:v $bitrate $filter -an "$video.mp4"
+
+ffmpeg -i "$video" -y -c:v libvpx -b:v $bitrate $filter -threads 7 -an "$video.webm"

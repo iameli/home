@@ -177,3 +177,5 @@ function nvm
   command rm -r $tmpdir
   return $s
 end
+alias think 'cd ~/Dropbox/thinkful'
+alias serve 'docker run -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4-alpine'
