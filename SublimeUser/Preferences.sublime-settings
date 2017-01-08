@@ -1,5 +1,4 @@
 {
-	"auto_complete_commit_on_tab": true,
 	"added_words":
 	[
 		"Javascript",
@@ -13,10 +12,12 @@
 		"html",
 		"ng"
 	],
-	"atomic_save": false,
-	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"atomic_save": true,
+	"auto_complete_commit_on_tab": true,
+	"color_scheme": "Packages/User/SublimeLinter/Monokai Extended Bright (SL).tmTheme",
 	"create_window_at_startup": true,
 	"draw_centered": false,
+	"ensure_newline_at_eof_on_save": true,
 	"fold_buttons": false,
 	"folder_exclude_patterns":
 	[
@@ -37,7 +38,7 @@
 		"Tag",
 		"Vintage"
 	],
-	"line_numbers": false,
+	"line_numbers": true,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"margin": 4,
@@ -48,7 +49,7 @@
 	"tab_size": 2,
 	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": false,
+	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true,
 	"wrap_width": 100
 }
