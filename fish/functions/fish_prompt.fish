@@ -1,5 +1,7 @@
 function fish_prompt --description 'Write out the prompt'
 
+	tput cup $LINES
+
 	set -l last_status $status
 
 	if not set -q __fish_prompt_normal

@@ -1,5 +1,7 @@
 # Okay here's this fish thing let's do it
 
+tput cup $LINES
+
 # Colors are great
 set fish_color_user green
 set fish_color_cwd cyan
@@ -39,6 +41,8 @@ set PATH $PATH $HOME/code/sk-internal/apps/sk-ffmpeg/bin
 set -x NODE_PATH '/home/root/code/streamkitchen/apps:/home/root/code/sk-internal/apps'
 if [ (uname) = "Linux" ]
   set PATH $PATH $HOME/code/home/bin_linux
+else
+  set PATH $PATH $HOME/code/home/bin_mac
 end
 set PATH $PATH $HOME/bin_local
 
