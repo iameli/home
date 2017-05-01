@@ -65,6 +65,7 @@ alias ckeys "cd /Volumes/elidev/csats/keys"
 alias spa "cd ~/code/streamplace"
 alias spi "cd ~/code/streamplace-internal"
 alias spo "cd ~/code/streamplace-ops"
+alias swh "cd ~/code/wheelhouse"
 alias l "ls -alhs"
 alias dffmpeg "docker run -it -v /home/root:/home/root -w (pwd) --net=host gcr.io/stream-kitchen/sk-ffmpeg ffmpeg"
 alias sk "node ~/code/pratty-apps/apps/sk-cli/dist/app.js"
@@ -194,4 +195,8 @@ function nvm
   return $s
 end
 alias think 'cd ~/Dropbox/thinkful'
+alias sub 'code -g'
 alias serve 'docker run -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4-alpine'
+
+alias helm "/Users/eli/code/streamplace/node_modules/.bin/helm"
+alias minikube "/Users/eli/code/streamplace/node_modules/.bin/minikube"

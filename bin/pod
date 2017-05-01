@@ -6,4 +6,4 @@ set -o pipefail
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-echo -en $(kubectl get pods -o name | grep $1 | head -1 | sed 's/pod\///')
+echo -en $(kubectl get pods -o name | grep $1 | head -1 | sed 's/^.*\///')

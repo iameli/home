@@ -29,7 +29,7 @@
 	],
 	"follow_symlinks": true,
 	"font_face": "Operator Mono Book",
-	"font_size": 15,
+	"font_size": 16,
 	"ignored_packages":
 	[
 		"Alignment",

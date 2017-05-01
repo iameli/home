@@ -1,6 +1,6 @@
 [user]
 	name = Eli Mallon
-	email = eli@stream.kitchen
+	email = eli@stream.place
 [color]
 	branch = auto
 	diff = auto
@@ -25,7 +25,7 @@
 [core]
 	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	excludesfile = ~/.gitignore_global
-	editor = vim
+	editor = code --wait
 [alias]
 	st = status
 	stat = status

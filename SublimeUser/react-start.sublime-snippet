@@ -1,12 +1,18 @@
 <snippet>
   <content><![CDATA[
 
-import React from "react";
+import React, { Component } from "react";
+import {watch, bindComponent} from "./sp-binding";
 
-export default class ${1:MyThingy} extends React.Component{
-  constructor() {
-    super();
-    this.state = {};
+export class ${1:MyThingy} extends Component {
+  static propTypes = {
+    "${2:userId}": React.PropTypes.string.isRequired,
+  };
+
+  static subscribe(props) {
+    return {
+      ${3:user}: watch.one("${3:user}s", {id: ${2:userId}})
+    }
   }
 
   render () {
@@ -16,13 +22,10 @@ export default class ${1:MyThingy} extends React.Component{
   }
 }
 
-${1:MyThingy}.propTypes = {
-  "params": React.PropTypes.object.isRequired,
-};
-
+export default bindComponent(${1:MyThingy});
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <!-- <tabTrigger>hello</tabTrigger> -->
+   <tabTrigger>react-start</tabTrigger> 
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.python</scope> -->
 </snippet>
