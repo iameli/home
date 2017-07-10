@@ -1,0 +1,65 @@
+{
+    "fori":{
+        "prefix": "fori",
+		"body": [
+			"For ${1:index} = ${2:lower} To ${3:Upper}",
+			"\t$0",
+			"End For"
+		],
+		"description": "For Loop"
+    },
+    "fore":{
+        "prefix": "fore",
+		"body": [
+			"For Each ${1:Variable} In ${2:Collection}",
+			"\t$0",
+			"End For"
+		],
+		"description": "For Each Loop"
+    },
+	"while":{
+		"prefix": "while",
+		"body": [
+			"while ${1:Boolean}",
+			"\t$0",
+			"end while"
+		],
+		"description": "While ... End While"
+	},
+	"if":{
+		"prefix": "if",
+		"body":[
+			"if ${1:Boolean}",
+			"\t$0",
+			"end if"
+		]
+	},
+	"ife":{
+		"prefix": "ife",
+		"body":[
+			"if ${1:Boolean}",
+			"\t$0",
+			"else",
+			"\t$0",
+			"end if"
+		]
+	},
+	"function":{
+		"prefix": "func",
+		"body": [
+			"function ${1:FunctionName}(${2:ParameterList}) As ${3:ReturnType}",
+			"\t\t$0",
+			"end function"
+		],
+		"description": "Function..."
+	},
+	"method":{
+		"prefix": "method",
+		"body": [
+			"${1:MethodName}: function(${2:ParameterList}) As ${3:ReturnType}",
+			"\t\t$0",
+			"end function"
+		],
+		"description": "Method..."
+	}
+}

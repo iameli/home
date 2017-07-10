@@ -1,0 +1,74 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'show', 'vsce', 'version' ]
+2 info using npm@3.10.6
+3 info using node@v6.3.1
+4 silly mapToRegistry name vsce
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'vsce',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   escapedName: 'vsce',
+7 silly mapToRegistry   name: 'vsce',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/vsce
+9 verbose request uri https://registry.npmjs.org/vsce
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 22:38:55
+12 verbose request id fe4306bf110e0a99
+13 verbose etag "1LBRJ89HNQ9WOHOMF6T5IUKP7"
+14 http request GET https://registry.npmjs.org/vsce
+15 http 200 https://registry.npmjs.org/vsce
+16 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+16 verbose headers   etag: '"BRCL39NG4FLMNO8BZSR3VSRT"',
+16 verbose headers   'content-type': 'application/json',
+16 verbose headers   'content-encoding': 'gzip',
+16 verbose headers   'cache-control': 'max-age=300',
+16 verbose headers   'content-length': '5890',
+16 verbose headers   'accept-ranges': 'bytes',
+16 verbose headers   date: 'Fri, 12 Aug 2016 20:38:56 GMT',
+16 verbose headers   via: '1.1 varnish',
+16 verbose headers   age: '0',
+16 verbose headers   connection: 'keep-alive',
+16 verbose headers   'x-served-by': 'cache-fra1224-FRA',
+16 verbose headers   'x-cache': 'MISS',
+16 verbose headers   'x-cache-hits': '0',
+16 verbose headers   'x-timer': 'S1471034335.523054,VS0,VE723',
+16 verbose headers   vary: 'Accept-Encoding' }
+17 silly get cb [ 200,
+17 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+17 silly get     etag: '"BRCL39NG4FLMNO8BZSR3VSRT"',
+17 silly get     'content-type': 'application/json',
+17 silly get     'content-encoding': 'gzip',
+17 silly get     'cache-control': 'max-age=300',
+17 silly get     'content-length': '5890',
+17 silly get     'accept-ranges': 'bytes',
+17 silly get     date: 'Fri, 12 Aug 2016 20:38:56 GMT',
+17 silly get     via: '1.1 varnish',
+17 silly get     age: '0',
+17 silly get     connection: 'keep-alive',
+17 silly get     'x-served-by': 'cache-fra1224-FRA',
+17 silly get     'x-cache': 'MISS',
+17 silly get     'x-cache-hits': '0',
+17 silly get     'x-timer': 'S1471034335.523054,VS0,VE723',
+17 silly get     vary: 'Accept-Encoding' } ]
+18 verbose get saving vsce to /home/teddy/.npm/registry.npmjs.org/vsce/.cache.json
+19 verbose correctMkdir /home/teddy/.npm correctMkdir not in flight; initializing
+20 verbose exit [ 0, true ]
+21 verbose stack Error: write EPIPE
+21 verbose stack     at exports._errnoException (util.js:1012:11)
+21 verbose stack     at WriteWrap.afterWrite (net.js:793:14)
+22 verbose cwd /home/teddy/Kod/vcode/fish
+23 error Linux 4.6.4-1-ARCH
+24 error argv "/usr/bin/node" "/usr/bin/npm" "show" "vsce" "version"
+25 error node v6.3.1
+26 error npm  v3.10.6
+27 error code EPIPE
+28 error errno EPIPE
+29 error syscall write
+30 error write EPIPE
+31 error If you need help, you may report this error at:
+31 error     <https://github.com/npm/npm/issues>
+32 verbose exit [ 1, true ]
