@@ -25,26 +25,26 @@ set __fish_git_prompt_char_stateseparator ' '
 # set -U my_emoji 🍕
 
 # Need some more stuff on my path I suppose
-set PATH $PATH $HOME/bin
-set PATH $PATH $HOME/pear/bin
-set PATH $PATH /usr/local/bin
-set PATH $PATH /usr/local/sbin
-set PATH $PATH $HOME/google-cloud-sdk/bin
-set PATH $PATH /opt/google-cloud-sdk/bin
-set PATH $PATH $HOME/go/bin
-set PATH $PATH $HOME/code/pratty-ops/bin
-set PATH $PATH /Volumes/elidev/csats/ops/run
-set PATH $PATH /Users/eli/.nvm/versions/node/v4.5.0/bin
-set PATH $PATH $HOME/code/gopath/bin
-set PATH $PATH $HOME/code/streamplace-ops/bin
-set PATH $PATH $HOME/code/sk-internal/apps/sk-ffmpeg/bin
+set PATH $PATH $HOME/bin 2>/dev/null
+set PATH $PATH $HOME/pear/bin 2>/dev/null
+set PATH $PATH /usr/local/bin 2>/dev/null
+set PATH $PATH /usr/local/sbin 2>/dev/null
+set PATH $PATH $HOME/google-cloud-sdk/bin 2>/dev/null
+set PATH $PATH /opt/google-cloud-sdk/bin 2>/dev/null
+set PATH $PATH $HOME/go/bin 2>/dev/null
+set PATH $PATH $HOME/code/pratty-ops/bin 2>/dev/null
+set PATH $PATH /Volumes/elidev/csats/ops/run 2>/dev/null
+set PATH $PATH /Users/eli/.nvm/versions/node/v4.5.0/bin 2>/dev/null
+set PATH $PATH $HOME/code/gopath/bin 2>/dev/null
+set PATH $PATH $HOME/code/streamplace-ops/bin 2>/dev/null
+set PATH $PATH $HOME/code/sk-internal/apps/sk-ffmpeg/bin 2>/dev/null
 set -x NODE_PATH '/home/root/code/streamkitchen/apps:/home/root/code/sk-internal/apps'
 if [ (uname) = "Linux" ]
-  set PATH $PATH $HOME/code/home/bin_linux
+  set PATH $PATH $HOME/code/home/bin_linux 2>/dev/null
 else
-  set PATH $PATH $HOME/code/home/bin_mac
+  set PATH $PATH $HOME/code/home/bin_mac 2>/dev/null
 end
-set PATH $PATH $HOME/bin_local
+set PATH $PATH $HOME/bin_local 2>/dev/null
 
 # Aliases are pretty cool
 alias apps "cd ~/code/apps"
@@ -196,7 +196,5 @@ function nvm
 end
 alias think 'cd ~/Dropbox/thinkful'
 alias sub 'code -g'
+# alias sub subl
 alias serve 'docker run -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4-alpine'
-
-alias helm "/Users/eli/code/streamplace/node_modules/.bin/helm"
-alias minikube "/Users/eli/code/streamplace/node_modules/.bin/minikube"

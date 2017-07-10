@@ -41,12 +41,14 @@ BG_WHITE="\[\033[47m\]"
 if [[ $EUID > 0 && "`type -t __git_ps1`" == 'function' ]]; then
     export GIT_PS1_SHOWDIRTYSTATE=true
     export GIT_PS1_SHOWUNTRACKEDFILES=true
-    export PS1="$(echo -en ${my_emoji:-})  ${FG_GREEN}\u ${FG_CYAN}\w ${FG_YELLOW}\$(__git_ps1 '%s ')${FG_MAGENTA}>${ANSI_RESET} "
+    export PS1="${MYNAME}  ${FG_GREEN}\u ${FG_CYAN}\w ${FG_YELLOW}\$(__git_ps1 '%s ')${FG_MAGENTA}>${ANSI_RESET} "
 fi
 
 alias apps="cd /Users/eli/code/apps"
+alias tt="cd /Users/eli/code/apps/tealtown/packages/csats:tealtown"
 alias c="cd /Users/eli/code"
 alias http="python -m SimpleHTTPServer 8000"
+alias g=hub
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 

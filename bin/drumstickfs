@@ -4,4 +4,4 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-sshfs drumstick:/home/root/code ~/sshcode -oauto_cache,reconnect,defer_permissions -oCipher=arcfour
+sshfs sneakers:/home/root/code ~/sshcode -oauto_cache,reconnect,defer_permissions -oCipher=arcfour
