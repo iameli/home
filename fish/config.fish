@@ -1,6 +1,3 @@
-# Okay here's this fish thing let's do it
-
-tput cup $LINES
 
 # Colors are great
 set fish_color_user green
