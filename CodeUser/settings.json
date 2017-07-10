@@ -1,0 +1,53 @@
+{
+    "editor.fontSize": 16,
+    "editor.fontWeight": "100",
+    "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.renderWhitespace": "boundary",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 100,
+    "editor.formatOnType": true,
+    "editor.acceptSuggestionOnEnter": false,
+    "editor.cursorStyle": "line-thin",
+    "editor.fontLigatures": false,
+    "workbench.colorTheme": "Monokai",
+    "files.autoSave": "onFocusChange",
+    "eslint.autoFixOnSave": true,
+    "terminal.external.osxExec": "iTerm2.app",
+    "window.zoomLevel": 0,
+    "files.insertFinalNewline": true,
+    "search.useIgnoreFilesByDefault": true,
+    "extensions.autoUpdate": true,
+    "workbench.experimental.colorCustomizations": {
+        "statusBarBackground": "#1A1A1A",
+        "statusBarNoFolderBackground": "#0A0A0D",
+        "statusBarDebuggingBackground": "#511f1f"
+    },
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.quickSuggestions": false
+    },
+    "cSpell.userWords": [
+        "Streamplace"
+    ],
+    "files.associations": {
+        "*.sublime-snippet": "xml",
+        "*.html": "handlebars"
+    },
+    "files.trimTrailingWhitespace": true,
+    "workbench.editor.closeOnFileDelete": false,
+    "workbench.iconTheme": "vs-seti",
+    "sync.gist": "09d1286c5f8222207b6c99dc01cf2d4c",
+    "sync.lastUpload": "",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "2017-04-28T23:11:56.471Z",
+    "sync.version": 262,
+    "sync.showSummary": true,
+    "sync.forceDownload": false,
+    "sync.anonymousGist": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "editor.minimap.enabled": false,
+    "rewrap.wrappingColumn": 80
+}
