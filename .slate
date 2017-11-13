@@ -8,11 +8,12 @@ alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
 alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
 alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
 alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
+
+alias squashright move screenOriginX+(7*screenSizeX/10);screenOriginY 3*screenSizeX/10;2*screenSizeY/3
+alias stretchleft move screenOriginX;screenOriginY (7*screenSizeX/10);screenSizeY
+
 alias moveleft throw previous resize
 alias moveright throw next resize
-
-alias leftquarter move screenOriginX;screenOriginY screenSizeX/4;screenSizeY
-alias rightthreequarters move screenOriginX;screenOriginY screenSizeX;screenSizeY
 
 bind left:${hyper} ${lefthalf}
 bind right:${hyper} ${righthalf}
@@ -21,5 +22,6 @@ bind down:${hyper} ${bottomhalf}
 bind m:${hyper} ${full}
 bind 9:${hyper} ${moveright}
 bind 0:${hyper} ${moveleft}
-bind q:${hyper} ${leftquarter}
-bind w:${hyper} ${rightthreequarters}
+
+bind q:${hyper} ${stretchleft}
+bind w:${hyper} ${squashright}
