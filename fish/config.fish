@@ -195,3 +195,4 @@ alias think 'cd ~/Dropbox/thinkful'
 alias sub 'code -g'
 # alias sub subl
 alias serve 'docker run -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4-alpine'
+rvm default

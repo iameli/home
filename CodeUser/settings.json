@@ -1,7 +1,7 @@
 {
     "editor.fontSize": 16,
     "editor.fontWeight": "100",
-    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Fira Code', 'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
     "editor.renderWhitespace": "boundary",
     "editor.tabSize": 2,
     "editor.wordWrap": "wordWrapColumn",
@@ -49,5 +49,9 @@
     "sync.host": "",
     "sync.pathPrefix": "",
     "editor.minimap.enabled": false,
-    "rewrap.wrappingColumn": 80
+    "rewrap.wrappingColumn": 80,
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "alt",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true
 }
