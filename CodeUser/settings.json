@@ -1,7 +1,7 @@
 {
     "editor.fontSize": 16,
     "editor.fontWeight": "100",
-    "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
     "editor.renderWhitespace": "boundary",
     "editor.tabSize": 2,
     "editor.wordWrap": "wordWrapColumn",
