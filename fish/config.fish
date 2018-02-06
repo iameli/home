@@ -21,8 +21,12 @@ set __fish_git_prompt_char_stateseparator ' '
 # I set this on a per-computer basis, just remember to do something like this
 # set -U my_emoji 🍕
 
+set -x GOPATH $HOME/code/go
+
 # Need some more stuff on my path I suppose
 set PATH $PATH $HOME/bin 2>/dev/null
+set PATH $PATH $HOME/code/home/bin 2>/dev/null
+set PATH $PATH $HOME/code/go/bin 2>/dev/null
 set PATH $PATH $HOME/pear/bin 2>/dev/null
 set PATH $PATH /usr/local/bin 2>/dev/null
 set PATH $PATH /usr/local/sbin 2>/dev/null
@@ -35,10 +39,13 @@ set PATH $PATH /Users/eli/.nvm/versions/node/v4.5.0/bin 2>/dev/null
 set PATH $PATH $HOME/code/go/bin 2>/dev/null
 set PATH $PATH $HOME/code/streamplace-ops/bin 2>/dev/null
 set PATH $PATH $HOME/code/sk-internal/apps/sk-ffmpeg/bin 2>/dev/null
+set PATH $PATH $HOME/code/streamplace-ops/bin 2>/dev/null
+
 set -x NODE_PATH '/home/root/code/streamkitchen/apps:/home/root/code/sk-internal/apps'
 if [ (uname) = "Linux" ]
   set PATH $PATH $HOME/code/home/bin_linux 2>/dev/null
 else
+  alias ls "gls -F --color=auto"
   set PATH $PATH $HOME/code/home/bin_mac 2>/dev/null
 end
 set PATH $PATH $HOME/bin_local 2>/dev/null
@@ -62,32 +69,36 @@ alias ckeys "cd /Volumes/elidev/csats/keys"
 alias spa "cd ~/code/streamplace"
 alias spi "cd ~/code/streamplace-internal"
 alias spo "cd ~/code/streamplace-ops"
+alias spk "cd /keybase/team/streamplace_team/secrets"
 alias swh "cd ~/code/wheelhouse"
 alias l "ls -alhs"
 alias dffmpeg "docker run -it -v /home/root:/home/root -w (pwd) --net=host gcr.io/stream-kitchen/sk-ffmpeg ffmpeg"
 alias sk "node ~/code/pratty-apps/apps/sk-cli/dist/app.js"
 alias bfg "java -jar ~/code/home/bin/bfg.jar"
 
-# grc colourify stuff
-alias colourify "grc -es --colour=auto"
-alias configure 'colourify ./configure'
-alias diff 'colourify diff'
-alias make 'colourify make'
-alias gcc 'colourify gcc'
-alias as 'colourify as'
-alias gas 'colourify gas'
-alias ld 'colourify ld'
-alias netstat 'colourify netstat'
-alias ping 'colourify ping'
-alias traceroute 'colourify /usr/sbin/traceroute'
-alias head 'colourify head'
-alias tail 'colourify tail'
-alias dig 'colourify dig'
-alias mount 'colourify mount'
-alias ps 'colourify ps'
-alias mtr 'colourify mtr'
-alias df 'colourify df'
+alias grc "python3 $HOME/code/home/fish/grc/grc"
+source $HOME/code/home/fish/grc/grc.fish
+# # grc colourify stuff
+# alias colourify "grc -es --colour=auto"
+# alias configure 'colourify ./configure'
+# alias diff 'colourify diff'
+# alias make 'colourify make'
+# alias gcc 'colourify gcc'
+# alias as 'colourify as'
+# alias gas 'colourify gas'
+# alias ld 'colourify ld'
+# alias netstat 'colourify netstat'
+# alias ping 'colourify ping'
+# alias traceroute 'colourify /usr/sbin/traceroute'
+# alias head 'colourify head'
+# alias tail 'colourify tail'
+# alias dig 'colourify dig'
+# alias mount 'colourify mount'
+# alias ps 'colourify ps'
+# alias mtr 'colourify mtr'
+# alias df 'colourify df'
 
+alias ls 'gls -F --color=auto'
 
 #? NVM wrapper. Félix Saparelli. Public Domain
 #> https://github.com/passcod/nvm-fish-wrapper
