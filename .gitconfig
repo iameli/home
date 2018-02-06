@@ -57,5 +57,8 @@
 	default = rebase
 [merge]
 	tool = vimdiff
+	conflictstyle = diff3
 [http]
 	sslVerify = false
+[rerere]
+	enabled = 1
