@@ -32,7 +32,7 @@ set PATH $PATH $HOME/go/bin 2>/dev/null
 set PATH $PATH $HOME/code/pratty-ops/bin 2>/dev/null
 set PATH $PATH /Volumes/elidev/csats/ops/run 2>/dev/null
 set PATH $PATH /Users/eli/.nvm/versions/node/v4.5.0/bin 2>/dev/null
-set PATH $PATH $HOME/code/gopath/bin 2>/dev/null
+set PATH $PATH $HOME/code/go/bin 2>/dev/null
 set PATH $PATH $HOME/code/streamplace-ops/bin 2>/dev/null
 set PATH $PATH $HOME/code/sk-internal/apps/sk-ffmpeg/bin 2>/dev/null
 set -x NODE_PATH '/home/root/code/streamkitchen/apps:/home/root/code/sk-internal/apps'
