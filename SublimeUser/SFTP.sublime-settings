@@ -1,9 +1,0 @@
-{
-  // Hide the output panel:
-  //  - false  = never
-  //  - number = seconds after completion
-  //  - true   = always
-  "hide_output_panel": true,
-  "email": "eli@iame.li",
-  "product_key": "c9535c-771a16-576c62-6e48fc-df2f0d"
-}
