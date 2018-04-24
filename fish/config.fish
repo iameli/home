@@ -9,13 +9,13 @@ set __fish_git_prompt_showuntrackedfiles 1
 set __fish_git_prompt_showdirtystate 1
 set __fish_git_prompt_color yellow -o
 
-set __fish_git_prompt_char_cleanstate '☼'
-set __fish_git_prompt_char_dirtystate '⚡ '
-set __fish_git_prompt_char_stagedstate '♦️ '
+set __fish_git_prompt_char_cleanstate '🌈 '
+set __fish_git_prompt_char_dirtystate '⚡️ '
+set __fish_git_prompt_char_stagedstate '🔴️ '
 set __fish_git_prompt_char_untrackedfiles '🌻 '
 set __fish_git_prompt_char_stashstate '👜 '
-set __fish_git_prompt_char_upstream_ahead ' 👆 '
-set __fish_git_prompt_char_upstream_behind ' 👇 '
+set __fish_git_prompt_char_upstream_ahead '🔼 '
+set __fish_git_prompt_char_upstream_behind '🔽 '
 set __fish_git_prompt_char_stateseparator ' '
 
 # I set this on a per-computer basis, just remember to do something like this

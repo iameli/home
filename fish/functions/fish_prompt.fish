@@ -7,16 +7,16 @@ function fish_prompt --description 'Write out the prompt'
 	end
 
 	# Emoji
-	echo -n "$my_emoji  "
+	printf "$my_emoji  "
 
 	# User
 	set_color $fish_color_user
-	echo -n "$USER "
+	printf "$USER "
 	set_color normal
 
 	# PWD
 	set_color $fish_color_cwd
-	echo -n (prompt_pwd)
+	printf (prompt_pwd)
 	set_color normal
 
 	printf '%s ' (__fish_git_prompt | sed s/[\)\(]//g)
@@ -27,6 +27,6 @@ function fish_prompt --description 'Write out the prompt'
 		set_color $fish_color_command
 	end
 
-	echo -n '> '
+	printf '▶︎ '
 
 end
