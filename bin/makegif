@@ -4,7 +4,7 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-width="450"
+width="1920"
 height="-1"
 fps="10"
 

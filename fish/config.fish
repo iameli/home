@@ -76,7 +76,7 @@ alias dffmpeg "docker run -it -v /home/root:/home/root -w (pwd) --net=host gcr.i
 alias sk "node ~/code/pratty-apps/apps/sk-cli/dist/app.js"
 alias bfg "java -jar ~/code/home/bin/bfg.jar"
 
-alias grc "python3 $HOME/code/home/fish/grc/grc"
+alias grc "python $HOME/code/home/fish/grc/grc"
 source $HOME/code/home/fish/grc/grc.fish
 # # grc colourify stuff
 # alias colourify "grc -es --colour=auto"
@@ -206,4 +206,4 @@ alias think 'cd ~/Dropbox/thinkful'
 alias sub 'code -g'
 # alias sub subl
 alias serve 'docker run -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4-alpine'
-rvm default
+which rvm; and rvm default
