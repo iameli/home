@@ -7,11 +7,13 @@ const homelinks = fs.readdirSync(path.resolve(__dirname, "homelinks"));
 const doLink = (src, dest) => {
   console.log(`ensuring ${src} ==> ${dest}`);
   // wrong destination check
-  if (fs.pathExistsSync(dest) && fs.lstatSync(dest) && !fs.pathExistsSync(dest)) {
-    fs.unlinkSync(dest);
-  }
+  try {
+    if (fs.lstatSync(dest).isSymbolicLink()) {
+      fs.unlinkSync(dest);
+    }
+  } catch (e) {}
   fs.ensureSymlinkSync(src, dest);
-}
+};
 
 for (const file of homelinks) {
   const src = path.resolve(__dirname, "homelinks", file);
@@ -24,8 +26,7 @@ for (const file of homelinks) {
       const subDest = path.resolve(dest, subFile);
       doLink(subSrc, subDest);
     }
-  }
-  else {
+  } else {
     doLink(src, dest);
   }
 }
