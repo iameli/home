@@ -1,5 +1,5 @@
 [submodule "fish/grc"]
-	path = fish/grc
+	path = homelinks/.config/fish/grc
 	url = git@github.com:garabik/grc.git
 [submodule ".nvm"]
 	path = .nvm

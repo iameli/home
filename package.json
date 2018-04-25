@@ -1,0 +1,22 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pipelimit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iameli/home.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iameli/home/issues"
+  },
+  "homepage": "https://github.com/iameli/home#readme",
+  "dependencies": {
+    "fs-extra": "^5.0.0"
+  }
+}
