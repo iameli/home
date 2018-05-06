@@ -21,6 +21,12 @@ function fish_prompt --description 'Write out the prompt'
 
 	printf '%s ' (__fish_git_prompt | sed s/[\)\(]//g)
 
+	if set -q KUBECONFIG
+		set_color red
+		echo -en (basename (dirname $KUBECONFIG))
+		echo -en " "
+	end
+
 	if not test $last_status -eq 0
 		set_color $fish_color_error
 	else
