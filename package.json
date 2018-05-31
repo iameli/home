@@ -1,5 +1,5 @@
 {
-  "name": "home",
+  "name": "iameli",
   "version": "1.0.0",
   "description": "",
   "main": "pipelimit.js",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/iameli/home#readme",
   "dependencies": {
-    "fs-extra": "^5.0.0"
+    "fs-extra": "^5.0.0",
+    "node-fetch": "^2.1.2"
   }
 }

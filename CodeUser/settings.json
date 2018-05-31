@@ -1,8 +1,7 @@
 {
   "editor.fontSize": 16,
   "editor.fontWeight": "normal",
-  "editor.fontFamily":
-    "'Fira Code', 'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'Fira Code', 'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.renderWhitespace": "boundary",
   "editor.tabSize": 2,
   "editor.wordWrap": "wordWrapColumn",
@@ -26,9 +25,12 @@
   },
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
     "editor.quickSuggestions": false
   },
-  "cSpell.userWords": ["Streamplace"],
+  "cSpell.userWords": [
+    "Streamplace"
+  ],
   "files.associations": {
     "*.sublime-snippet": "xml",
     "*.html": "html"

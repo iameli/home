@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+const fetch = require("node-fetch");
+const TWO_WEEKS =
+  1000 /*ms*/ * 60 /*s*/ * 60 /*m*/ * 24 /*h*/ * 7 /*d*/ * 2 /*w*/;
+
+const symbols = {
+  Garbage: "🗑",
+  FoodAndYardWaste: "🍁",
+  Recycling: "♻️"
+};
+
+(async () => {
+  const res = await fetch(
+    `https://www.seattle.gov/UTIL/WARP/CollectionCalendar/GetCollectionDays?pAccount=&pAddress=${process
+      .argv[2]}&pJustChecking=&pApp=CC&pIE=&start=${(Date.now() - TWO_WEEKS) /
+      1000}&end=${Date.now() + TWO_WEEKS}&_=1525858389806`
+  );
+  const data = await res.json();
+
+  data
+    .sort((a, b) => {
+      return new Date(a.start).getTime() - new Date(b.start).getTime();
+    })
+    .map(datum => {
+      let str = `${datum.start}: `;
+      str += Object.keys(symbols)
+        .filter(x => datum[x])
+        .map(x => symbols[x])
+        .join(" ");
+      return str;
+    })
+    .forEach(x => console.log(x));
+})();
