@@ -55,7 +55,6 @@ alias kube kubectl
 alias kubename "kubectl config use-context"
 alias spa "cd ~/code/streamplace"
 alias spc "cd ~/code/cardcore"
-alias arl "cd ~/code/ario-light"
 alias spi "cd ~/code/streamplace-internal"
 alias spo "cd ~/code/streamplace-ops"
 alias spk "cd /keybase/team/streamplace_team/secrets"
