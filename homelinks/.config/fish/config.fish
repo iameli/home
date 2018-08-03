@@ -63,6 +63,7 @@ alias cops "cd /Volumes/elidev/csats/ops"
 alias capps "cd /Volumes/elidev/csats/apps"
 alias ckeys "cd /Volumes/elidev/csats/keys"
 alias spa "cd ~/code/streamplace"
+alias spc "cd ~/code/streamplace-card"
 alias spi "cd ~/code/streamplace-internal"
 alias spo "cd ~/code/streamplace-ops"
 alias spk "cd /keybase/team/streamplace_team/secrets"
@@ -201,5 +202,4 @@ end
 alias think 'cd ~/Dropbox/thinkful'
 alias sub 'code -g'
 # alias sub subl
-alias serve 'docker run -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4-alpine'
 which rvm; and rvm default

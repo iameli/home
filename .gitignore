@@ -4,3 +4,4 @@ oscrypto-ca-bundle.crt
 .npmrc
 .vscode
 CodeUser/workspaceStorage
+fish_universal_variables
