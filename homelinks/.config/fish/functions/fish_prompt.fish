@@ -7,7 +7,7 @@ function fish_prompt --description 'Write out the prompt'
 	end
 
 	# Emoji
-	printf "$my_emoji  "
+	# printf "$my_emoji  "
 
 	# User
 	set_color $fish_color_user

@@ -9,3 +9,5 @@ source '/Users/eli/google-cloud-sdk/path.bash.inc'
 
 # The next line enables shell command completion for gcloud.
 source '/Users/eli/google-cloud-sdk/completion.bash.inc'
+
+export PATH="$HOME/.cargo/bin:$PATH"

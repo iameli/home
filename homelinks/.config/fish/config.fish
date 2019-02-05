@@ -10,9 +10,9 @@ set __fish_git_prompt_showdirtystate 1
 set __fish_git_prompt_color yellow -o
 
 set __fish_git_prompt_char_cleanstate '🌈 '
-set __fish_git_prompt_char_dirtystate '⚡️ '
-set __fish_git_prompt_char_stagedstate '🔴️ '
-set __fish_git_prompt_char_untrackedfiles '🌻 '
+set __fish_git_prompt_char_dirtystate '* '
+set __fish_git_prompt_char_stagedstate '+ '
+set __fish_git_prompt_char_untrackedfiles '% '
 set __fish_git_prompt_char_stashstate '👜 '
 set __fish_git_prompt_char_upstream_ahead '🔼 '
 set __fish_git_prompt_char_upstream_behind '🔽 '
@@ -36,6 +36,8 @@ set PATH $PATH $HOME/go/bin 2>/dev/null
 set PATH $PATH /Users/eli/.nvm/versions/node/v4.5.0/bin 2>/dev/null
 set PATH $PATH $HOME/code/go/bin 2>/dev/null
 set PATH $PATH $HOME/code/streamplace-ops/bin 2>/dev/null
+set PATH $PATH $HOME/Library/Android/sdk/platform-tools 2>/dev/null
+set PATH $PATH $HOME/.cargo/bin
 
 set -x NODE_PATH '/home/root/code/streamkitchen/apps:/home/root/code/sk-internal/apps'
 if [ (uname) = "Linux" ]
@@ -47,23 +49,13 @@ end
 set PATH $PATH $HOME/bin_local 2>/dev/null
 
 # Aliases are pretty cool
-alias apps "cd ~/code/apps"
-alias ops "cd ~/code/ops"
-alias tt "cd ~/code/apps/tealtown/packages/csats:tealtown"
 alias c "cd ~/code"
-alias http "python -m SimpleHTTPServer 8000"
+alias r "cd (git rev-parse --show-toplevel)"
 alias kube kubectl
 alias kubename "kubectl config use-context"
-alias k "~/code/pratty-ops/run/kubectl"
-alias pa "cd ~/code/pratty-apps"
-alias po "cd ~/code/pratty-ops"
-alias pk "cd ~/code/pratty-keys"
-alias csats "cd /Volumes/elidev/csats"
-alias cops "cd /Volumes/elidev/csats/ops"
-alias capps "cd /Volumes/elidev/csats/apps"
-alias ckeys "cd /Volumes/elidev/csats/keys"
 alias spa "cd ~/code/streamplace"
-alias spc "cd ~/code/streamplace-card"
+alias spc "cd ~/code/cardcore"
+alias arl "cd ~/code/ario-light"
 alias spi "cd ~/code/streamplace-internal"
 alias spo "cd ~/code/streamplace-ops"
 alias spk "cd /keybase/team/streamplace_team/secrets"
@@ -72,6 +64,9 @@ alias l "ls -alhs"
 alias dffmpeg "docker run -it -v /home/root:/home/root -w (pwd) --net=host gcr.io/stream-kitchen/sk-ffmpeg ffmpeg"
 alias sk "node ~/code/pratty-apps/apps/sk-cli/dist/app.js"
 alias bfg "java -jar ~/code/home/bin/bfg.jar"
+
+# livepeer
+alias lpf "cd ~/code/livepeerjs"
 
 alias grc "python $HOME/code/home/fish/grc/grc"
 source $HOME/code/home/fish/grc/grc.fish

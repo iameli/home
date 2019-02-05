@@ -1,0 +1,8 @@
+#!/bin/bash
+
+DESKTOP="$HOME/Desktop"
+DIR="$HOME/.ods/$(date '+%Y-%m-%d')";
+echo "Moving from $DESKTOP to $DIR. Ctrl+C if you don't want that"
+read
+mkdir -p "$DIR"
+mv "$DESKTOP"/* "$DIR"
