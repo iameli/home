@@ -13,7 +13,7 @@
   "workbench.colorTheme": "Monokai",
   "files.autoSave": "onFocusChange",
   "terminal.external.osxExec": "iTerm2.app",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "files.insertFinalNewline": true,
   "search.useIgnoreFilesByDefault": true,
   "extensions.autoUpdate": true,
@@ -48,5 +48,8 @@
   "git.autofetch": true,
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.fontWeight": "normal",
-  "breadcrumbs.enabled": true
+  "breadcrumbs.enabled": true,
+  "javascript.validate.enable": false,
+  "eslint.packageManager": "yarn",
+  "latex-workshop.view.pdf.viewer": "browser"
 }

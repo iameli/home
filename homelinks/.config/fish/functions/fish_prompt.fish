@@ -11,7 +11,7 @@ function fish_prompt --description 'Write out the prompt'
 
 	# User
 	set_color $fish_color_user
-	printf "$USER "
+	printf "rinkeby "
 	set_color normal
 
 	# PWD
@@ -33,6 +33,6 @@ function fish_prompt --description 'Write out the prompt'
 		set_color $fish_color_command
 	end
 
-	printf '▶︎ '
+	printf '▶ '
 
 end
