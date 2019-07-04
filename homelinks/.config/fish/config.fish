@@ -39,6 +39,8 @@ set PATH $PATH $HOME/code/streamplace-ops/bin 2>/dev/null
 set PATH $PATH $HOME/Library/Android/sdk/platform-tools 2>/dev/null
 set PATH $PATH $HOME/.cargo/bin 2>/dev/null
 set PATH $PATH $HOME/code/go/src/github.com/livepeer/go-livepeer 2>/dev/null
+set PATH /Library/Java/JavaVirtualMachines/adoptopenjdk-12.jdk/Contents/Home/bin $PATH 2>/dev/null
+
 
 set -x NODE_PATH '/home/root/code/streamkitchen/apps:/home/root/code/sk-internal/apps'
 if [ (uname) = "Linux" ]
@@ -68,6 +70,9 @@ alias bfg "java -jar ~/code/home/bin/bfg.jar"
 # livepeer
 alias lpf "cd ~/code/livepeerjs"
 alias lpg "cd $GOPATH/src/github.com/livepeer/go-livepeer"
+alias lpk "cd ~/code/livepeer-kube"
+alias lpd "cd ~/code/devops"
+alias lpw "cd ~/code/livepeer-wowza"
 alias lpms "cd $GOPATH/src/github.com/livepeer/lpms"
 
 alias grc "python $HOME/code/home/fish/grc/grc"

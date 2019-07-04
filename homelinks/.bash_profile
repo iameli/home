@@ -11,3 +11,5 @@ source '/Users/eli/google-cloud-sdk/path.bash.inc'
 source '/Users/eli/google-cloud-sdk/completion.bash.inc'
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+export WMSJAVA_HOME="/Library/WowzaStreamingEngine-4.7.7/java"

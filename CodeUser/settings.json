@@ -13,7 +13,7 @@
   "workbench.colorTheme": "Monokai",
   "files.autoSave": "onFocusChange",
   "terminal.external.osxExec": "iTerm2.app",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "files.insertFinalNewline": true,
   "search.useIgnoreFilesByDefault": true,
   "extensions.autoUpdate": true,
@@ -30,7 +30,8 @@
   "cSpell.userWords": ["Streamplace"],
   "files.associations": {
     "*.sublime-snippet": "xml",
-    "*.html": "html"
+    "*.html": "html",
+    "Dockerfile.*": "dockerfile"
   },
   "files.trimTrailingWhitespace": true,
   "workbench.editor.closeOnFileDelete": false,
@@ -41,9 +42,9 @@
   "editor.multiCursorModifier": "alt",
   "editor.snippetSuggestions": "top",
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
   "[json]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autofetch": true,
   "terminal.integrated.fontSize": 16,
@@ -51,5 +52,12 @@
   "breadcrumbs.enabled": true,
   "javascript.validate.enable": false,
   "eslint.packageManager": "yarn",
-  "latex-workshop.view.pdf.viewer": "browser"
+  "latex-workshop.view.pdf.viewer": "browser",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.sideBar.location": "left",
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
