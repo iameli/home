@@ -68,6 +68,7 @@ alias sk "node ~/code/pratty-apps/apps/sk-cli/dist/app.js"
 alias bfg "java -jar ~/code/home/bin/bfg.jar"
 
 # livepeer
+alias lpc "cd ~/code/livepeer-chart"
 alias lpf "cd ~/code/livepeerjs"
 alias lpg "cd $GOPATH/src/github.com/livepeer/go-livepeer"
 alias lpk "cd ~/code/livepeer-kube"
