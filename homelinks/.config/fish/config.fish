@@ -39,7 +39,9 @@ set PATH $PATH $HOME/code/streamplace-ops/bin 2>/dev/null
 set PATH $PATH $HOME/Library/Android/sdk/platform-tools 2>/dev/null
 set PATH $PATH $HOME/.cargo/bin 2>/dev/null
 set PATH $PATH $HOME/code/go/src/github.com/livepeer/go-livepeer 2>/dev/null
+set PATH $PATH /usr/local/Cellar/node/12.1.0/bin 2>/dev/null
 set PATH /Library/Java/JavaVirtualMachines/adoptopenjdk-12.jdk/Contents/Home/bin $PATH 2>/dev/null
+
 
 
 set -x NODE_PATH '/home/root/code/streamkitchen/apps:/home/root/code/sk-internal/apps'
@@ -66,15 +68,17 @@ alias l "ls -alhs"
 alias dffmpeg "docker run -it -v /home/root:/home/root -w (pwd) --net=host gcr.io/stream-kitchen/sk-ffmpeg ffmpeg"
 alias sk "node ~/code/pratty-apps/apps/sk-cli/dist/app.js"
 alias bfg "java -jar ~/code/home/bin/bfg.jar"
+alias ym "pygmentize -l yaml"
 
 # livepeer
 alias lpc "cd ~/code/livepeer-chart"
 alias lpf "cd ~/code/livepeerjs"
 alias lpg "cd $GOPATH/src/github.com/livepeer/go-livepeer"
-alias lpk "cd ~/code/livepeer-kube"
+alias lpk "cd ~/code/livepeer-infra"
 alias lpd "cd ~/code/devops"
-alias lpw "cd ~/code/livepeer-wowza"
+alias lpw "cd $GOPATH/src/github.com/livepeer/livepeer-wowza"
 alias lpms "cd $GOPATH/src/github.com/livepeer/lpms"
+alias lpc "cd ~/code/livepeer-chart"
 
 alias grc "python $HOME/code/home/fish/grc/grc"
 source $HOME/code/home/fish/grc/grc.fish
@@ -211,3 +215,4 @@ set -g fish_user_paths "/usr/local/opt/node@10/bin" $fish_user_paths
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/iameli/google-cloud-sdk/path.fish.inc' ]; . '/Users/iameli/google-cloud-sdk/path.fish.inc'; end
 
+set -g fish_user_paths "/usr/local/opt/node@10/bin" $fish_user_paths

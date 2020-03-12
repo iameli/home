@@ -5,3 +5,4 @@ oscrypto-ca-bundle.crt
 .vscode
 CodeUser/workspaceStorage
 fish_universal_variables
+fish_variables

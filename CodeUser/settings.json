@@ -31,7 +31,8 @@
   "files.associations": {
     "*.sublime-snippet": "xml",
     "*.html": "html",
-    "Dockerfile.*": "dockerfile"
+    "Dockerfile.*": "dockerfile",
+    "*.yaml": "helm"
   },
   "files.trimTrailingWhitespace": true,
   "workbench.editor.closeOnFileDelete": false,
@@ -50,7 +51,6 @@
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.fontWeight": "normal",
   "breadcrumbs.enabled": true,
-  "javascript.validate.enable": false,
   "eslint.packageManager": "yarn",
   "latex-workshop.view.pdf.viewer": "browser",
   "[javascript]": {
@@ -59,5 +59,14 @@
   "workbench.sideBar.location": "left",
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
   }
 }

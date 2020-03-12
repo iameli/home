@@ -23,7 +23,7 @@ function fish_prompt --description 'Write out the prompt'
 
 	if set -q KUBECONFIG
 		set_color red
-		echo -en (basename $KUBECONFIG)
+		echo -en (basename (dirname $KUBECONFIG))
 		echo -en " "
 	end
 
