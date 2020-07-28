@@ -13,3 +13,8 @@ source '/Users/eli/google-cloud-sdk/completion.bash.inc'
 export PATH="$HOME/.cargo/bin:$PATH"
 
 export WMSJAVA_HOME="/Library/WowzaStreamingEngine-4.7.7/java"
+
+  if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+    __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
+    source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
+  fi

@@ -210,9 +210,7 @@ alias think 'cd ~/Dropbox/thinkful'
 alias sub 'code -g'
 # alias sub subl
 which rvm; and rvm default
-set -g fish_user_paths "/usr/local/opt/node@10/bin" $fish_user_paths
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/iameli/google-cloud-sdk/path.fish.inc' ]; . '/Users/iameli/google-cloud-sdk/path.fish.inc'; end
 
-set -g fish_user_paths "/usr/local/opt/node@10/bin" $fish_user_paths
