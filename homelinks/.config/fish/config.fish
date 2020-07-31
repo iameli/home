@@ -38,10 +38,11 @@ set PATH $PATH $HOME/code/go/bin 2>/dev/null
 set PATH $PATH $HOME/code/streamplace-ops/bin 2>/dev/null
 set PATH $PATH $HOME/Library/Android/sdk/platform-tools 2>/dev/null
 set PATH $PATH $HOME/.cargo/bin 2>/dev/null
+set PATH $PATH $GOROOT/bin 2>/dev/null
 set PATH $PATH $HOME/code/go/src/github.com/livepeer/go-livepeer 2>/dev/null
 set PATH $PATH /usr/local/Cellar/node/12.1.0/bin 2>/dev/null
 set PATH /Library/Java/JavaVirtualMachines/adoptopenjdk-12.jdk/Contents/Home/bin $PATH 2>/dev/null
-
+set PATH $PATH /usr/local/Cellar/node/12.1.0/bin 2>/dev/null
 
 
 set -x NODE_PATH '/home/root/code/streamkitchen/apps:/home/root/code/sk-internal/apps'
