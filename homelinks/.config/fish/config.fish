@@ -72,14 +72,13 @@ alias bfg "java -jar ~/code/home/bin/bfg.jar"
 alias ym "pygmentize -l yaml"
 
 # livepeer
-alias lpc "cd ~/code/livepeer-chart"
+alias lpc "cd ~/code/livepeer.com"
 alias lpf "cd ~/code/livepeerjs"
-alias lpg "cd $GOPATH/src/github.com/livepeer/go-livepeer"
+alias lpg "cd ~/code/go-livepeer"
 alias lpk "cd ~/code/livepeer-infra"
 alias lpd "cd ~/code/devops"
 alias lpw "cd $GOPATH/src/github.com/livepeer/livepeer-wowza"
 alias lpms "cd $GOPATH/src/github.com/livepeer/lpms"
-alias lpc "cd ~/code/livepeer-chart"
 
 alias grc "python $HOME/code/home/fish/grc/grc"
 source $HOME/code/home/fish/grc/grc.fish
