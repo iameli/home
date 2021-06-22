@@ -22,10 +22,10 @@ function fish_prompt --description 'Write out the prompt'
 
 	printf '%s ' (__fish_git_prompt | sed s/[\)\(]//g)
 
-	if set -q KUBECONFIG
+	if which kubectl > /dev/null
 		set_color red
-		echo -en (basename $KUBECONFIG)
-		echo -en " "
+		printf (kubectl config current-context)
+		printf " "
 	end
 
 	if not test $last_status -eq 0
