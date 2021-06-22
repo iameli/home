@@ -24,6 +24,7 @@ set __fish_git_prompt_char_stateseparator ' '
 set -x GOPATH $HOME/code/go
 
 # Need some more stuff on my path I suppose
+set PATH $PATH $HOME/code/livepeer-infra/bin 2>/dev/null
 set PATH $PATH $HOME/bin 2>/dev/null
 set PATH $PATH $HOME/code/home/bin 2>/dev/null
 set PATH $PATH $HOME/code/go/bin 2>/dev/null
@@ -72,10 +73,11 @@ alias bfg "java -jar ~/code/home/bin/bfg.jar"
 alias ym "pygmentize -l yaml"
 
 # livepeer
-alias lpc "cd ~/code/livepeer.com"
+alias lpc "cd ~/code/livepeer-com"
 alias lpf "cd ~/code/livepeerjs"
 alias lpg "cd ~/code/go-livepeer"
 alias lpk "cd ~/code/livepeer-infra"
+alias lpb "cd ~/code/livepeer-in-a-box"
 alias lpd "cd ~/code/devops"
 alias lpw "cd $GOPATH/src/github.com/livepeer/livepeer-wowza"
 alias lpms "cd $GOPATH/src/github.com/livepeer/lpms"
@@ -101,8 +103,6 @@ source $HOME/code/home/fish/grc/grc.fish
 # alias ps 'colourify ps'
 # alias mtr 'colourify mtr'
 # alias df 'colourify df'
-
-alias ls 'gls -F --color=auto'
 
 #? NVM wrapper. Félix Saparelli. Public Domain
 #> https://github.com/passcod/nvm-fish-wrapper
@@ -213,4 +213,3 @@ which rvm; and rvm default
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/iameli/google-cloud-sdk/path.fish.inc' ]; . '/Users/iameli/google-cloud-sdk/path.fish.inc'; end
-
