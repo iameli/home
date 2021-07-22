@@ -28,6 +28,7 @@ set PATH $PATH $HOME/code/livepeer-infra/bin 2>/dev/null
 set PATH $PATH $HOME/bin 2>/dev/null
 set PATH $PATH $HOME/code/home/bin 2>/dev/null
 set PATH $PATH $HOME/code/go/bin 2>/dev/null
+set PATH $PATH $HOME/.local/bin 2>/dev/null
 set PATH $PATH $HOME/pear/bin 2>/dev/null
 set PATH $PATH /usr/local/bin 2>/dev/null
 set PATH $PATH /usr/local/sbin 2>/dev/null
