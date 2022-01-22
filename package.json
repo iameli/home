@@ -18,6 +18,6 @@
   "homepage": "https://github.com/iameli/home#readme",
   "dependencies": {
     "fs-extra": "^5.0.0",
-    "node-fetch": "^2.1.2"
+    "node-fetch": "^3.1.1"
   }
 }
