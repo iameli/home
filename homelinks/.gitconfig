@@ -28,6 +28,8 @@
 	editor = code --wait
 	eol = lf
 	autocrlf = false
+	pager = less -S
+	attributesfile = /Users/iameli/.config/git/attributes
 [alias]
 	st = status
 	stat = status
@@ -56,6 +58,7 @@
 	lb = !git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf(\"  \\033[33m%s: \\033[37m %s\\033[0m\\n\", substr($2, 1, length($2)-1), $1)}'
 [push]
 	default = tracking
+	autoSetupRemote = true
 [pull]
 	default = rebase
 [merge]
@@ -63,5 +66,6 @@
 	conflictstyle = diff3
 [http]
 	sslVerify = false
+	proxy = 
 [rerere]
 	enabled = 1

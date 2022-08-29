@@ -25,6 +25,7 @@ set -x GOPATH $HOME/code/go
 
 # Need some more stuff on my path I suppose
 set PATH $PATH $HOME/code/livepeer-infra/bin 2>/dev/null
+set PATH /opt/homebrew/bin $PATH 2>/dev/null
 set PATH $PATH $HOME/bin 2>/dev/null
 set PATH $PATH $HOME/code/home/bin 2>/dev/null
 set PATH $PATH $HOME/code/go/bin 2>/dev/null
@@ -45,7 +46,9 @@ set PATH $PATH $HOME/code/go/src/github.com/livepeer/go-livepeer 2>/dev/null
 set PATH $PATH /usr/local/Cellar/node/12.1.0/bin 2>/dev/null
 set PATH /Library/Java/JavaVirtualMachines/adoptopenjdk-12.jdk/Contents/Home/bin $PATH 2>/dev/null
 set PATH $PATH /usr/local/Cellar/node/12.1.0/bin 2>/dev/null
-
+set PATH $PATH /Users/iameli/Library/Python/3.8/bin 2>/dev/null
+set PATH $PATH /$HOME/code/catalyst/bin 2>/dev/null
+set PATH $PATH /$HOME/.deno/bin 2>/dev/null
 
 set -x NODE_PATH '/home/root/code/streamkitchen/apps:/home/root/code/sk-internal/apps'
 if [ (uname) = "Linux" ]
@@ -78,13 +81,14 @@ alias lpc "cd ~/code/livepeer-com"
 alias lpf "cd ~/code/livepeerjs"
 alias lpg "cd ~/code/go-livepeer"
 alias lpk "cd ~/code/livepeer-infra"
-alias lpb "cd ~/code/livepeer-in-a-box"
+alias lpb "cd ~/code/catalyst"
 alias lpd "cd ~/code/devops"
 alias lpw "cd $GOPATH/src/github.com/livepeer/livepeer-wowza"
-alias lpms "cd $GOPATH/src/github.com/livepeer/lpms"
+alias lpms "cd ~/code/lpms"
+alias mist "cd ~/code/mistserver"
 
-alias grc "python $HOME/code/home/fish/grc/grc"
-source $HOME/code/home/fish/grc/grc.fish
+# alias grc "python $HOME/code/home/homelinks/.config/fish/grc/grc"
+# source $HOME/code/home/homelinks/.config/fish/grc/grc.fish
 # # grc colourify stuff
 # alias colourify "grc -es --colour=auto"
 # alias configure 'colourify ./configure'
@@ -214,3 +218,14 @@ which rvm; and rvm default
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/iameli/google-cloud-sdk/path.fish.inc' ]; . '/Users/iameli/google-cloud-sdk/path.fish.inc'; end
+
+set fish_greeting
+fish_add_path /opt/homebrew/opt/bison/bin
+fish_add_path /opt/homebrew/opt/qt@5/bin
+alias fixup="git commit --fixup HEAD"
+source ~/code/livepeer-infra/hack/lp.fish
+
+# Bun
+set -Ux BUN_INSTALL "/Users/iameli/.bun"
+set -px --path PATH "/Users/iameli/.bun/bin"
+

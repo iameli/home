@@ -10,7 +10,6 @@ source '/Users/eli/google-cloud-sdk/path.bash.inc'
 # The next line enables shell command completion for gcloud.
 source '/Users/eli/google-cloud-sdk/completion.bash.inc'
 
-export PATH="$HOME/.cargo/bin:$PATH"
 
 export WMSJAVA_HOME="/Library/WowzaStreamingEngine-4.7.7/java"
 
@@ -18,3 +17,4 @@ export WMSJAVA_HOME="/Library/WowzaStreamingEngine-4.7.7/java"
     __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
     source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
   fi
+. "$HOME/.cargo/env"

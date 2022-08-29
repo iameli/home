@@ -69,3 +69,4 @@ export NVM_DIR="/Users/eli/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export WMSJAVA_HOME="/Library/WowzaStreamingEngine-4.7.7/java"
+. "$HOME/.cargo/env"
