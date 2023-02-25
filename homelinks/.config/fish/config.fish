@@ -47,8 +47,11 @@ set PATH $PATH /usr/local/Cellar/node/12.1.0/bin 2>/dev/null
 set PATH /Library/Java/JavaVirtualMachines/adoptopenjdk-12.jdk/Contents/Home/bin $PATH 2>/dev/null
 set PATH $PATH /usr/local/Cellar/node/12.1.0/bin 2>/dev/null
 set PATH $PATH /Users/iameli/Library/Python/3.8/bin 2>/dev/null
+set PATH $PATH /Users/iameli/Library/Python/3.9/bin 2>/dev/null
 set PATH $PATH /$HOME/code/catalyst/bin 2>/dev/null
 set PATH $PATH /$HOME/.deno/bin 2>/dev/null
+set PATH $PATH /$HOME/google-cloud-sdk/bin 2>/dev/null
+set PATH $PATH /usr/local/go/bin
 
 set -x NODE_PATH '/home/root/code/streamkitchen/apps:/home/root/code/sk-internal/apps'
 if [ (uname) = "Linux" ]
@@ -86,6 +89,7 @@ alias lpd "cd ~/code/devops"
 alias lpw "cd $GOPATH/src/github.com/livepeer/livepeer-wowza"
 alias lpms "cd ~/code/lpms"
 alias mist "cd ~/code/mistserver"
+alias cap "cd ~/code/catalyst-api"
 
 # alias grc "python $HOME/code/home/homelinks/.config/fish/grc/grc"
 # source $HOME/code/home/homelinks/.config/fish/grc/grc.fish
@@ -229,3 +233,8 @@ source ~/code/livepeer-infra/hack/lp.fish
 set -Ux BUN_INSTALL "/Users/iameli/.bun"
 set -px --path PATH "/Users/iameli/.bun/bin"
 
+
+# pnpm
+set -gx PNPM_HOME "/Users/iameli/Library/pnpm"
+set -gx PATH "$PNPM_HOME" $PATH
+# pnpm end
