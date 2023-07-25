@@ -24,9 +24,9 @@ set __fish_git_prompt_char_stateseparator ' '
 set -x GOPATH $HOME/code/go
 
 # Need some more stuff on my path I suppose
-set PATH $PATH $HOME/code/livepeer-infra/bin 2>/dev/null
 set PATH /opt/homebrew/bin $PATH 2>/dev/null
-set PATH $PATH $HOME/bin 2>/dev/null
+set PATH $HOME/bin $PATH 2>/dev/null
+set PATH $PATH $HOME/code/livepeer-infra/bin 2>/dev/null
 set PATH $PATH $HOME/code/home/bin 2>/dev/null
 set PATH $PATH $HOME/code/go/bin 2>/dev/null
 set PATH $PATH $HOME/.local/bin 2>/dev/null
@@ -52,6 +52,8 @@ set PATH $PATH /$HOME/code/catalyst/bin 2>/dev/null
 set PATH $PATH /$HOME/.deno/bin 2>/dev/null
 set PATH $PATH /$HOME/google-cloud-sdk/bin 2>/dev/null
 set PATH $PATH /usr/local/go/bin
+# ugh
+set PATH $PATH $HOME/.local/share/solana/install/active_release/bin
 
 set -x NODE_PATH '/home/root/code/streamkitchen/apps:/home/root/code/sk-internal/apps'
 if [ (uname) = "Linux" ]
@@ -80,7 +82,7 @@ alias bfg "java -jar ~/code/home/bin/bfg.jar"
 alias ym "pygmentize -l yaml"
 
 # livepeer
-alias lpc "cd ~/code/livepeer-com"
+alias lpc "cd ~/code/studio"
 alias lpf "cd ~/code/livepeerjs"
 alias lpg "cd ~/code/go-livepeer"
 alias lpk "cd ~/code/livepeer-infra"

@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Note: Be sure to set BITLY_LOGIN and BITLY_APIKEY in .bash_profile
+
+# .bash_profile
+#
+# export BITLY_LOGIN=REPLACE_WITH_LOGIN
+# export BITLY_APIKEY=REPLACE_WITH_KEY
+#
+# Then run "source ~/.bash_profile" to update your current shell.
+
+set -euo pipefail
+
+source ~/.bitly
+
+if [ "$#" -ne 1 ]; then
+  echo "Usage: $0 <URL>"
+  exit 0
+fi
+
+body=$(echo '
+{
+  "group_guid": "Bm4tdHqvU7U",
+  "domain": "lvpr.link",
+  "long_url": '$(echo $1 | jq -R)'
+}' | jq -c '.')
+
+# body=$(echo '
+# {
+#   "group_guid": "Bm4tdHqvU7U",
+#   "domain": "bit.ly",
+#   "long_url": "https://dev.bitly.com/"
+# }' | jq -c '.')
+
+curl --silent "https://api-ssl.bitly.com/v4/shorten" \
+  -H "Authorization: Bearer $BITLY_APIKEY" \
+  -H "Content-Type: application/json" \
+  --data-raw "$body" | jq -r '.link'

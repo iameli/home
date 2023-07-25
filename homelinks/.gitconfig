@@ -59,6 +59,7 @@
 [push]
 	default = tracking
 	autoSetupRemote = true
+	autoSetupRemote = true
 [pull]
 	default = rebase
 [merge]

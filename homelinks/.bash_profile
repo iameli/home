@@ -18,3 +18,5 @@ export WMSJAVA_HOME="/Library/WowzaStreamingEngine-4.7.7/java"
     source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
   fi
 . "$HOME/.cargo/env"
+
+export PATH="/Users/iameli/.local/share/solana/install/active_release/bin:$PATH"
