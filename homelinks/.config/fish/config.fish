@@ -92,6 +92,7 @@ alias lpw "cd $GOPATH/src/github.com/livepeer/livepeer-wowza"
 alias lpms "cd ~/code/lpms"
 alias mist "cd ~/code/mistserver"
 alias cap "cd ~/code/catalyst-api"
+alias aq "cd ~/code/aquareum"
 
 # alias grc "python $HOME/code/home/homelinks/.config/fish/grc/grc"
 # source $HOME/code/home/homelinks/.config/fish/grc/grc.fish
