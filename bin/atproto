@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -euo pipefail
+
+dig +short TXT _atproto.$1
+
+curl https://$1/.well-known/atproto-did
+
