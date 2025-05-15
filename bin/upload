@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -euo pipefail
+
+uu="$(uuidgen | tr '[:upper:]' '[:lower:]')"
+
+dest="$uu/$(basename "$1")"
+mc cp "$1" "streamplace-crap/streamplace-crap/$dest"
+
+echo "https://storage.googleapis.com/streamplace-crap/$dest"
