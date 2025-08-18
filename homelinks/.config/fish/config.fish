@@ -223,9 +223,6 @@ alias sub 'code -g'
 # alias sub subl
 which rvm; and rvm default
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/iameli/google-cloud-sdk/path.fish.inc' ]; . '/Users/iameli/google-cloud-sdk/path.fish.inc'; end
-
 set fish_greeting
 fish_add_path /opt/homebrew/opt/bison/bin
 fish_add_path /opt/homebrew/opt/qt@5/bin
@@ -241,3 +238,7 @@ set -px --path PATH "/Users/iameli/.bun/bin"
 set -gx PNPM_HOME "/Users/iameli/Library/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/iameli/google-cloud-sdk/path.fish.inc' ]; . '/Users/iameli/google-cloud-sdk/path.fish.inc'; end
+
+set -gx COREPACK_ENABLE_DOWNLOAD_PROMPT 0

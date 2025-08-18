@@ -6,3 +6,5 @@ oscrypto-ca-bundle.crt
 CodeUser/workspaceStorage
 fish_universal_variables
 fish_variables
+.backup
+*.backup

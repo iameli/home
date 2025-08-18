@@ -1,11 +1,11 @@
 function fish_prompt --description 'Write out the prompt'
 
 	if set -q NOPROMPT
-		if which kubectl > /dev/null
-			set_color red
-			printf (kubectl config current-context)
-			printf " "
-		end
+		# if which kubectl > /dev/null
+		# 	set_color red
+		# 	printf (kubectl config current-context)
+		# 	printf " "
+		# end
 		set_color $fish_color_command
 		printf '▶ '
 		return

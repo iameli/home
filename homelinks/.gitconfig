@@ -70,3 +70,9 @@
 	proxy = 
 [rerere]
 	enabled = 1
+[url "https://github.com/"]
+	insteadOf = git@github.com:
+[url "git@github.com:"]
+	pushInsteadOf = git@github.com:
+[url "git@github.com:"]
+	insteadOf = git@secretgit.com:

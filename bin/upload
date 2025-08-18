@@ -8,3 +8,5 @@ dest="$uu/$(basename "$1")"
 mc cp "$1" "streamplace-crap/streamplace-crap/$dest"
 
 echo "https://storage.googleapis.com/streamplace-crap/$dest"
+
+echo "https://storage.googleapis.com/streamplace-crap/$dest"| qrencode -m 2 -t utf8
