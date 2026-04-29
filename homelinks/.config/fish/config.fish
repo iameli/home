@@ -46,8 +46,8 @@ set PATH $PATH $HOME/code/go/src/github.com/livepeer/go-livepeer 2>/dev/null
 set PATH $PATH /usr/local/Cellar/node/12.1.0/bin 2>/dev/null
 set PATH /Library/Java/JavaVirtualMachines/adoptopenjdk-12.jdk/Contents/Home/bin $PATH 2>/dev/null
 set PATH $PATH /usr/local/Cellar/node/12.1.0/bin 2>/dev/null
-set PATH $PATH /Users/iameli/Library/Python/3.8/bin 2>/dev/null
-set PATH $PATH /Users/iameli/Library/Python/3.9/bin 2>/dev/null
+set PATH $PATH $HOME/Library/Python/3.8/bin 2>/dev/null
+set PATH $PATH $HOME/Library/Python/3.9/bin 2>/dev/null
 set PATH $PATH /$HOME/code/catalyst/bin 2>/dev/null
 set PATH $PATH /$HOME/.deno/bin 2>/dev/null
 set PATH $PATH /$HOME/google-cloud-sdk/bin 2>/dev/null
@@ -93,6 +93,8 @@ alias lpms "cd ~/code/lpms"
 alias mist "cd ~/code/mistserver"
 alias cap "cd ~/code/catalyst-api"
 alias aq "cd ~/code/aquareum"
+
+alias code zed
 
 # alias grc "python $HOME/code/home/homelinks/.config/fish/grc/grc"
 # source $HOME/code/home/homelinks/.config/fish/grc/grc.fish
@@ -230,15 +232,15 @@ alias fixup="git commit --fixup HEAD"
 source ~/code/livepeer-infra/hack/lp.fish
 
 # Bun
-set -Ux BUN_INSTALL "/Users/iameli/.bun"
-set -px --path PATH "/Users/iameli/.bun/bin"
+set -Ux BUN_INSTALL "$HOME/.bun"
+set -px --path PATH "$HOME/.bun/bin"
 
 
 # pnpm
-set -gx PNPM_HOME "/Users/iameli/Library/pnpm"
+set -gx PNPM_HOME "$HOME/Library/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/iameli/google-cloud-sdk/path.fish.inc' ]; . '/Users/iameli/google-cloud-sdk/path.fish.inc'; end
+if [ -f '$HOME/google-cloud-sdk/path.fish.inc' ]; . '$HOME/google-cloud-sdk/path.fish.inc'; end
 
 set -gx COREPACK_ENABLE_DOWNLOAD_PROMPT 0
