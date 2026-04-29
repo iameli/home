@@ -1,3 +1,4 @@
+bind ctrl-c cancel-commandline
 
 # Colors are great
 set fish_color_user green
